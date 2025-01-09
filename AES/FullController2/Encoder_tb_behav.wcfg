@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TotalSystem_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TotalSystem_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="6.000001 us"></ZoomEndTime>
+      <Cursor1Time time="6.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="160"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/TotalSystem_TB/tb_CLK" type="logic">
+      <obj_property name="ElementShortName">tb_CLK</obj_property>
+      <obj_property name="ObjectShortName">tb_CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/tb_RST" type="logic">
+      <obj_property name="ElementShortName">tb_RST</obj_property>
+      <obj_property name="ObjectShortName">tb_RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/tb_A" type="logic">
+      <obj_property name="ElementShortName">tb_A</obj_property>
+      <obj_property name="ObjectShortName">tb_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/tb_B" type="logic">
+      <obj_property name="ElementShortName">tb_B</obj_property>
+      <obj_property name="ObjectShortName">tb_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/tb_PWM_OUT" type="logic">
+      <obj_property name="ElementShortName">tb_PWM_OUT</obj_property>
+      <obj_property name="ObjectShortName">tb_PWM_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/tb_PWM_DIRECTION" type="logic">
+      <obj_property name="ElementShortName">tb_PWM_DIRECTION</obj_property>
+      <obj_property name="ObjectShortName">tb_PWM_DIRECTION</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/tb_PWM_ERROR" type="logic">
+      <obj_property name="ElementShortName">tb_PWM_ERROR</obj_property>
+      <obj_property name="ObjectShortName">tb_PWM_ERROR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/CPU_Position" type="array">
+      <obj_property name="ElementShortName">CPU_Position[8:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_Position[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/Kp" type="array">
+      <obj_property name="ElementShortName">Kp[20:0]</obj_property>
+      <obj_property name="ObjectShortName">Kp[20:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/Ki" type="array">
+      <obj_property name="ElementShortName">Ki[20:0]</obj_property>
+      <obj_property name="ObjectShortName">Ki[20:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/Kd" type="array">
+      <obj_property name="ElementShortName">Kd[20:0]</obj_property>
+      <obj_property name="ObjectShortName">Kd[20:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/SetP" type="array">
+      <obj_property name="ElementShortName">SetP[8:0]</obj_property>
+      <obj_property name="ObjectShortName">SetP[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/MaxBitsK" type="other">
+      <obj_property name="ElementShortName">MaxBitsK</obj_property>
+      <obj_property name="ObjectShortName">MaxBitsK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/PositionBits" type="other">
+      <obj_property name="ElementShortName">PositionBits</obj_property>
+      <obj_property name="ObjectShortName">PositionBits</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/UUT/PIDT/Error" type="array">
+      <obj_property name="ElementShortName">Error[8:0]</obj_property>
+      <obj_property name="ObjectShortName">Error[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/UUT/PWMT/POWER" type="array">
+      <obj_property name="ElementShortName">POWER[18:0]</obj_property>
+      <obj_property name="ObjectShortName">POWER[18:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

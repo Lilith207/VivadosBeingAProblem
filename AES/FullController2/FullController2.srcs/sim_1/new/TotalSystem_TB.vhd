@@ -2,12 +2,11 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity Encoder_tb is
-end Encoder_tb;
+entity TotalSystem_TB is
+end TotalSystem_TB;
 
-architecture Behavioral of Encoder_tb is
-    constant PosiBits: integer := 20;
-    
+architecture Behavioral of TotalSystem_TB is
+
     component TopLevel
         generic
         (
@@ -33,6 +32,7 @@ architecture Behavioral of Encoder_tb is
         );
     end component;
     constant MaxBitsK: integer := 20;
+    constant PositionBits : integer := 8;
     
     signal tb_CLK: std_logic := '0';
     signal tb_RST: std_logic := '0';
@@ -41,9 +41,11 @@ architecture Behavioral of Encoder_tb is
     signal tb_PWM_OUT: std_logic := '0';
     signal tb_PWM_DIRECTION: std_logic := '0';
     signal tb_PWM_ERROR: std_logic := '0';
+    signal CPU_Position : std_logic_vector(PositionBits downto 0);
     signal Kp: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(120000, MaxBitsK+1));
     signal Ki: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(320000, MaxBitsK+1));
     signal Kd: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(1000, MaxBitsK+1));
+    signal SetP: std_logic_vector(PositionBits downto 0) := std_logic_vector(to_signed(10, PositionBits+1));
     
 begin
 
@@ -59,7 +61,8 @@ UUT: TopLevel
         B => tb_B,
         PWM_OUT => tb_PWM_OUT,
         PWM_DIRECTION => tb_PWM_DIRECTION,
-        PWM_ERROR => tb_PWM_ERROR
+        PWM_ERROR => tb_PWM_ERROR,
+        CPU_Position => CPU_Position
     );
     
     tb_CLK <= not tb_CLK after 4ns;
