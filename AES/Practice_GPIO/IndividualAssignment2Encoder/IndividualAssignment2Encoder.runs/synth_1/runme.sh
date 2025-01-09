@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/arwen/OneDrive - Office 365 Fontys/Documenten/Vivado + Xilinx/Tutorials/IndividualAssignment2Encoder/IndividualAssignment2Encoder.runs/synth_1'
+HD_PWD='C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

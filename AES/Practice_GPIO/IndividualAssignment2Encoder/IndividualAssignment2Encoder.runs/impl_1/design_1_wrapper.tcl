@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/arwen/OneDrive - Office 365 Fontys/Documenten/Vivado + Xilinx/Tutorials/IndividualAssignment2Encoder/IndividualAssignment2Encoder.runs/impl_1/design_1_wrapper.tcl"
+  variable script "C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.runs/impl_1/design_1_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -131,20 +131,20 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {C:/Users/arwen/OneDrive - Office 365 Fontys/Documenten/Vivado + Xilinx/Tutorials/IndividualAssignment2Encoder/IndividualAssignment2Encoder.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/arwen/OneDrive - Office 365 Fontys/Documenten/Vivado + Xilinx/Tutorials/IndividualAssignment2Encoder/IndividualAssignment2Encoder.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/arwen/OneDrive - Office 365 Fontys/Documenten/Vivado + Xilinx/Tutorials/IndividualAssignment2Encoder/IndividualAssignment2Encoder.cache/ip}} [current_project]
+  set_property webtalk.parent_dir C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.cache/wt [current_project]
+  set_property parent.project_path C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.xpr [current_project]
+  set_property ip_output_repo C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{C:/Users/arwen/OneDrive - Office 365 Fontys/Documenten/Vivado + Xilinx/Tutorials/IndividualAssignment2Encoder/IndividualAssignment2Encoder.runs/synth_1/design_1_wrapper.dcp}}
+  add_files -quiet C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files {{C:/Users/arwen/OneDrive - Office 365 Fontys/Documenten/Vivado + Xilinx/Tutorials/IndividualAssignment2Encoder/IndividualAssignment2Encoder.srcs/sources_1/bd/design_1/design_1.bd}}
+  add_files C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{C:/Users/arwen/OneDrive - Office 365 Fontys/Documenten/Vivado + Xilinx/Tutorials/IndividualAssignment2Encoder/IndividualAssignment2Encoder.srcs/constrs_1/new/Constraints Encoder 2.xdc}}
+  read_xdc {{C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.srcs/constrs_1/new/Constraints Encoder 2.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
