@@ -12,7 +12,7 @@ architecture Behavioral of Encoder_tb is
         generic
         (
             DetailK : integer := 5; --amount of numbers behind the comma it should have in detail
-            MaxBitsK : integer := 32; --the amount of bits to be used for k
+            MaxBitsK : integer := 20; --the amount of bits to be used for k
         
             MaxIntegral : integer := 5000;
         
@@ -32,6 +32,7 @@ architecture Behavioral of Encoder_tb is
             PWM_OUT, PWM_DIRECTION, PWM_ERROR : out std_logic
         );
     end component;
+    constant MaxBitsK: integer := 20;
     
     signal tb_CLK: std_logic := '0';
     signal tb_RST: std_logic := '0';
@@ -40,6 +41,9 @@ architecture Behavioral of Encoder_tb is
     signal tb_PWM_OUT: std_logic := '0';
     signal tb_PWM_DIRECTION: std_logic := '0';
     signal tb_PWM_ERROR: std_logic := '0';
+    signal Kp: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(120000, MaxBitsK+1));
+    signal Ki: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(320000, MaxBitsK+1));
+    signal Kd: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(1000, MaxBitsK+1));
     
 begin
 

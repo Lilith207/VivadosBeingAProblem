@@ -10,38 +10,39 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source TopLevel.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/utils_1/imports/synth_1/TopLevel.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/utils_1/imports/synth_1/TopLevel.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top TopLevel -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24460
+INFO: [Synth 8-7075] Helper process launched with PID 3988
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1385.551 ; gain = 410.875
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1762.234 ; gain = 409.262
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:31]
 	Parameter max_value bound to: 200000 - type: integer 
 	Parameter bitnumber bound to: 18 - type: integer 
-INFO: [Synth 8-3491] module 'PWM' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:5' bound to instance 'PWMT' of component 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:87]
+INFO: [Synth 8-3491] module 'PWM' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:5' bound to instance 'PWMT' of component 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:93]
 INFO: [Synth 8-638] synthesizing module 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:17]
 	Parameter max_value bound to: 200000 - type: integer 
 	Parameter bitnumber bound to: 18 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'PWM' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:17]
 	Parameter PosiBits bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:5' bound to instance 'EncoderT' of component 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:101]
+INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:5' bound to instance 'EncoderT' of component 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:107]
 INFO: [Synth 8-638] synthesizing module 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:16]
 	Parameter PosiBits bound to: 8 - type: integer 
 WARNING: [Synth 8-614] signal 'BBB' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:22]
 WARNING: [Synth 8-614] signal 'AAA' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'Encoder' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:16]
-WARNING: [Synth 8-5640] Port 'clk' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:38]
-WARNING: [Synth 8-5640] Port 'position' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:38]
-WARNING: [Synth 8-5640] Port 'set_point' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:38]
-WARNING: [Synth 8-5640] Port 'power' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:38]
-WARNING: [Synth 8-5640] Port 'errorout' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:38]
-	Parameter KBits bound to: 24 - type: integer 
+	Parameter KBits bound to: 20 - type: integer 
 	Parameter KDetail bound to: 100000 - type: integer 
 	Parameter IntegralBits bound to: 13 - type: integer 
 	Parameter MaxIntegral bound to: 5000 - type: integer 
@@ -49,9 +50,9 @@ WARNING: [Synth 8-5640] Port 'errorout' is missing in component declaration [C:/
 	Parameter MaxPower bound to: 200000 - type: integer 
 	Parameter MaxPowerBits bound to: 18 - type: integer 
 	Parameter PIDCLKTS bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'PID' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:6' bound to instance 'PIDT' of component 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:114]
+INFO: [Synth 8-3491] module 'PID' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:6' bound to instance 'PIDT' of component 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:120]
 INFO: [Synth 8-638] synthesizing module 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:29]
-	Parameter KBits bound to: 24 - type: integer 
+	Parameter KBits bound to: 20 - type: integer 
 	Parameter KDetail bound to: 100000 - type: integer 
 	Parameter IntegralBits bound to: 13 - type: integer 
 	Parameter MaxIntegral bound to: 5000 - type: integer 
@@ -59,35 +60,60 @@ INFO: [Synth 8-638] synthesizing module 'PID' [C:/VivadoBullshit/VivadosBeingAPr
 	Parameter MaxPower bound to: 200000 - type: integer 
 	Parameter MaxPowerBits bound to: 18 - type: integer 
 	Parameter PIDCLKTS bound to: 100 - type: integer 
-WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
 WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
 WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
 INFO: [Synth 8-256] done synthesizing module 'PID' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:31]
 WARNING: [Synth 8-3848] Net ErrorOut in module/entity PID does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:25]
-WARNING: [Synth 8-3848] Net POWER in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:82]
-WARNING: [Synth 8-3848] Net Kp in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:83]
-WARNING: [Synth 8-3848] Net Kd in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:83]
-WARNING: [Synth 8-3848] Net Ki in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:83]
 WARNING: [Synth 8-7129] Port ErrorOut in module PID is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1476.766 ; gain = 502.090
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1853.734 ; gain = 500.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1476.766 ; gain = 502.090
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1853.734 ; gain = 500.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1853.734 ; gain = 500.762
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1853.734 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
+Finished Parsing XDC File [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1937.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1937.973 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1476.766 ; gain = 502.090
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1476.766 ; gain = 502.090
+Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1937.973 ; gain = 585.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1937.973 ; gain = 585.000
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -113,7 +139,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 5     
 +---Muxes : 
 	   2 Input   31 Bit        Muxes := 1     
-	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 1     
 	   2 Input   19 Bit        Muxes := 1     
 	   3 Input   19 Bit        Muxes := 1     
 	   2 Input   14 Bit        Muxes := 2     
@@ -132,26 +158,55 @@ BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP PIDT/multOp, operation Mode is: A*B.
+DSP Report: operator PIDT/multOp is absorbed into DSP PIDT/multOp.
+DSP Report: Generating DSP PIDT/POWER0, operation Mode is: PCIN+A*B.
+DSP Report: operator PIDT/POWER0 is absorbed into DSP PIDT/POWER0.
+DSP Report: operator PIDT/POWER1 is absorbed into DSP PIDT/POWER0.
+DSP Report: Generating DSP PIDT/multOp, operation Mode is: A*B.
+DSP Report: operator PIDT/multOp is absorbed into DSP PIDT/multOp.
+DSP Report: operator PIDT/multOp is absorbed into DSP PIDT/multOp.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|PID         | A*B         | 21     | 9      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|PID         | PCIN+A*B    | 21     | 9      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|PID         | A*B         | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1937.973 ; gain = 585.000
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -169,41 +224,51 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|PID         | A*B         | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|PID         | PCIN+A*B    | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|PID         | A*B         | 30     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
 
 Report BlackBoxes: 
 +-+--------------+----------+
@@ -212,39 +277,49 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------+------+
-|      |Cell  |Count |
-+------+------+------+
-|1     |IBUF  |     1|
-|2     |OBUF  |     2|
-|3     |OBUFT |     1|
-+------+------+------+
-
-Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |     4|
-+------+---------+-------+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    75|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |    68|
+|5     |LUT2    |   168|
+|6     |LUT3    |    42|
+|7     |LUT4    |    14|
+|8     |LUT5    |    89|
+|9     |LUT6    |    39|
+|10    |FDCE    |    11|
+|11    |FDPE    |     2|
+|12    |FDRE    |    57|
+|13    |FDSE    |    15|
+|14    |LDC     |     2|
+|15    |IBUF    |    76|
+|16    |OBUF    |    11|
+|17    |OBUFT   |     1|
++------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.973 ; gain = 585.000
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
-Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1937.973 ; gain = 500.762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.973 ; gain = 585.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1673.750 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1937.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1773.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1941.203 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 2 instances were transformed.
+  LDC => LDCE: 2 instances
 
-Synth Design complete, checksum: a6ef5d43
+Synth Design complete, checksum: 4053dc2e
 INFO: [Common 17-83] Releasing license: Synthesis
-22 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+33 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1773.438 ; gain = 823.637
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1941.203 ; gain = 966.223
 INFO: [Common 17-1381] The checkpoint 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/TopLevel.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TopLevel_utilization_synth.rpt -pb TopLevel_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 10:27:57 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 14:16:13 2025...

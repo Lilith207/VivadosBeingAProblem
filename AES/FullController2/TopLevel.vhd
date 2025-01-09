@@ -7,7 +7,7 @@ entity TopLevel is
     generic
     (
         DetailK : integer := 5; --amount of numbers behind the comma it should have in detail
-        MaxBitsK : integer := 32; --the amount of bits to be used for k
+        MaxBitsK : integer := 20; --the amount of bits to be used for k
         
         MaxIntegral : integer := 5000;
         
