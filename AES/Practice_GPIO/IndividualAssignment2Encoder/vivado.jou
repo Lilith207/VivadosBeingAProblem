@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jan  9 13:47:08 2025
+# Process ID: 23136
+# Current directory: C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2972 C:\VivadosBeingAProblem\AES\Practice_GPIO\IndividualAssignment2Encoder\IndividualAssignment2Encoder.xpr
+# Log file: C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/vivado.log
+# Journal file: C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder\vivado.jou
+# Running On: ArwenLT, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16857 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.xpr
