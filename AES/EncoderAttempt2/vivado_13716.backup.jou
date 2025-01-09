@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Mon Dec  9 18:12:11 2024
-# Process ID: 15308
+# Start of session at: Sun Dec 15 15:22:32 2024
+# Process ID: 13716
 # Current directory: C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/EncoderAttempt2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5040 C:\Users\freek\OneDrive\Bureaublad\Mechatronics\AES\EncoderAttempt2\EncoderAttempt2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7852 C:\Users\freek\OneDrive\Bureaublad\Mechatronics\AES\EncoderAttempt2\EncoderAttempt2.xpr
 # Log file: C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/EncoderAttempt2/vivado.log
 # Journal file: C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/EncoderAttempt2\vivado.jou
 # Running On: MSI, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16936 MB
@@ -13,13 +13,3 @@
 start_gui
 open_project C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/EncoderAttempt2/EncoderAttempt2.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source Encoder_tb.tcl
-run 4 us
-restart
-run 5 us
-close_sim
-launch_simulation
-source Encoder_tb.tcl
-run 5 us
-restart

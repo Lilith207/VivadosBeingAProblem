@@ -7,7 +7,7 @@ entity TopLevel is
     generic
     (
         DetailK : integer := 5; --amount of numbers behind the comma it should have in detail
-        MaxK : integer := 100; --maximum 
+        MaxBitsK : integer := 32; --the amount of bits to be used for k
         
         MaxIntegral : integer := 5000;
         
@@ -15,11 +15,15 @@ entity TopLevel is
         CLK_SPD : integer := 125; --in MHz (mega hertz, to make hertz you multiply with 10^6)
         
         MaxPosition : integer := 200; --this is determined by size of the max size of setpoint
+        PositionBits : integer := 8;
         PIDCLKTS : integer := 100
     );
     Port 
     ( 
         CLK, RST, A, B : in std_logic;
+        Kp, Kd, Ki : in std_logic_vector(MaxBitsK downto 0);
+        Set_point : in std_logic_vector(PositionBits downto 0);
+        CPU_Position : out std_logic_vector(PositionBits downto 0);
         PWM_OUT, PWM_DIRECTION, PWM_ERROR : out std_logic
     );
 end TopLevel;
@@ -31,9 +35,7 @@ constant MaxPower : integer := integer(ceil(real(PWM_Period)/real(CLK_Period)));
 constant FullKDetail : integer := 10**DetailK;
 
 constant MaxBitsPower : integer := integer(ceil(log2(real(MaxPower))));
-constant MaxBitsK : integer := integer(ceil(log2(real(MaxK)*(10**real(DetailK)))));
 constant MaxBitsIntegral : integer := integer(ceil(log2(real(MaxIntegral)))); 
-constant PositionBits : integer := integer(ceil(log2(real(MaxPosition)))); 
 
 component PID
     Generic (
@@ -50,7 +52,11 @@ component PID
         PIDCLKTS : integer
     );
     Port (
-        Kp, Kd, Ki : in std_logic_vector(KBits downto 0)
+        CLK : in std_logic;
+        Position, Set_point : in std_logic_vector(MaxPositionBits downto 0); 
+        Kp, Kd, Ki : in std_logic_vector(KBits downto 0);
+        POWER : out std_logic_vector(MaxPowerBits downto 0);
+        ErrorOut : out std_logic --for when things happen which aren't supposed to happen
      );
 end component;
 
@@ -78,9 +84,9 @@ component Encoder
 end component;
 
 signal ENC_ERROR : std_logic;
+signal ErrorOut : std_logic;
 signal POSITION : std_logic_vector(PositionBits downto 0);
 signal POWER : std_logic_vector(MaxBitsPower downto 0);
-signal Kp, Kd, Ki : std_logic_vector(MaxBitsK downto 0);
 
 begin
 
@@ -123,8 +129,15 @@ begin
             KBits => MaxBitsK
          )
          port map (
+            CLK => CLK,
+            POSITION => POSITION,
+            Set_point => Set_point,
             Kp => Kp,
             Ki => Ki,
-            Kd => Kd
+            Kd => Kd,
+            POWER => POWER,
+            ErrorOut => ErrorOut
          );
+         
+         CPU_Position <= POSITION; --to pass position to the CPU too
 end Behavioral;

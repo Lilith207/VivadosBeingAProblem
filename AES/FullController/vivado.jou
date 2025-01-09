@@ -38,3 +38,16 @@ launch_runs synth_1 -jobs 28
 wait_on_run synth_1
 launch_runs impl_1 -jobs 28
 wait_on_run impl_1
+open_run impl_1
+file mkdir C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1
+file mkdir C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new
+close [ open C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc w ]
+add_files -fileset constrs_1 C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc
+file mkdir C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd w ]
+add_files -fileset sim_1 C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
