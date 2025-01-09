@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jan  9 14:16:21 2025
+# Process ID: 17660
+# Current directory: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1
+# Command line: vivado.exe -log TopLevel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TopLevel.tcl -notrace
+# Log file: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1/TopLevel.vdi
+# Journal file: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16936 MB
+#-----------------------------------------------------------
+source TopLevel.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 950.254 ; gain = 155.305
+Command: link_design -top TopLevel -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1353.668 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
