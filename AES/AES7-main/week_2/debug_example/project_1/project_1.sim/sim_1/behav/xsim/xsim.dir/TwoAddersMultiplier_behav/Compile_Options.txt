@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "TwoAddersMultiplier_behav" "xil_defaultlib.TwoAddersMultiplier" -log "elaborate.log" 

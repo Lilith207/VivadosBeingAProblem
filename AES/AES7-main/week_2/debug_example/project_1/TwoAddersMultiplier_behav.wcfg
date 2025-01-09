@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TwoAddersMultiplier_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TwoAddersMultiplier" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="80.940 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/TwoAddersMultiplier/A1" type="array">
+      <obj_property name="ElementShortName">A1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TwoAddersMultiplier/B1" type="array">
+      <obj_property name="ElementShortName">B1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TwoAddersMultiplier/A2" type="array">
+      <obj_property name="ElementShortName">A2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TwoAddersMultiplier/B2" type="array">
+      <obj_property name="ElementShortName">B2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TwoAddersMultiplier/P" type="array">
+      <obj_property name="ElementShortName">P[17:0]</obj_property>
+      <obj_property name="ObjectShortName">P[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TwoAddersMultiplier/Sum1" type="array">
+      <obj_property name="ElementShortName">Sum1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">Sum1[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TwoAddersMultiplier/Sum2" type="array">
+      <obj_property name="ElementShortName">Sum2[8:0]</obj_property>
+      <obj_property name="ObjectShortName">Sum2[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TwoAddersMultiplier/Product" type="array">
+      <obj_property name="ElementShortName">Product[17:0]</obj_property>
+      <obj_property name="ObjectShortName">Product[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

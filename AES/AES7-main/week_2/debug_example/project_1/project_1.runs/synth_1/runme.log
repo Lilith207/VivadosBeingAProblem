@@ -1,0 +1,199 @@
+
+*** Running vivado
+    with args -log TwoAddersMultiplier.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TwoAddersMultiplier.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source TwoAddersMultiplier.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/project_1/project_1.srcs/utils_1/imports/synth_1/TwoAddersMultiplier.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/project_1/project_1.srcs/utils_1/imports/synth_1/TwoAddersMultiplier.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TwoAddersMultiplier -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18664
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1389.434 ; gain = 403.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TwoAddersMultiplier' [C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/top_level.vhd:14]
+INFO: [Synth 8-3491] module 'Adder' declared at 'C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/adder.vhd:5' bound to instance 'Adder1' of component 'Adder' [C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/top_level.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'Adder' [C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/adder.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (0#1) [C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/adder.vhd:12]
+INFO: [Synth 8-3491] module 'Adder' declared at 'C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/adder.vhd:5' bound to instance 'Adder2' of component 'Adder' [C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/top_level.vhd:43]
+INFO: [Synth 8-3491] module 'Multiplier' declared at 'C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/multiplier.vhd:6' bound to instance 'Multiplier1' of component 'multiplier' [C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/top_level.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Multiplier' [C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/multiplier.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Multiplier' (0#1) [C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/multiplier.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'TwoAddersMultiplier' (0#1) [C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/top_level.vhd:14]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1481.746 ; gain = 496.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1481.746 ; gain = 496.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1481.746 ; gain = 496.215
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1481.746 ; gain = 496.215
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1663.391 ; gain = 677.859
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1671.312 ; gain = 685.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1671.500 ; gain = 685.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1671.500 ; gain = 685.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1671.500 ; gain = 685.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1671.500 ; gain = 685.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1671.500 ; gain = 685.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1671.500 ; gain = 685.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1671.500 ; gain = 685.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    19|
+|2     |LUT2   |    46|
+|3     |LUT3   |     7|
+|4     |LUT4   |    22|
+|5     |LUT5   |     1|
+|6     |LUT6   |    45|
+|7     |IBUF   |    32|
+|8     |OBUF   |    18|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+-----------+------+
+|      |Instance      |Module     |Cells |
++------+--------------+-----------+------+
+|1     |top           |           |   190|
+|2     |  Adder1      |Adder      |    11|
+|3     |  Adder2      |Adder_0    |    11|
+|4     |  Multiplier1 |Multiplier |   114|
++------+--------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1671.500 ; gain = 685.969
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1671.500 ; gain = 685.969
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1671.500 ; gain = 685.969
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1684.395 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1784.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d81ef592
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1784.086 ; gain = 809.168
+INFO: [Common 17-1381] The checkpoint 'C:/Users/freek/OneDrive/Bureaublad/Mechatronics/AES/AES7-main/week_2/debug_example/project_1/project_1.runs/synth_1/TwoAddersMultiplier.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TwoAddersMultiplier_utilization_synth.rpt -pb TwoAddersMultiplier_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 14:22:42 2024...
