@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.runs/synth_1'
+HD_PWD='C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,8 @@ EAStep()
      fi
 }
 
-EAStep vivado -log TopLevel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel.tcl
+# pre-commands:
+/bin/touch .init_design.begin.rst
+EAStep vivado -log TopLevel.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source TopLevel.tcl -notrace
+
+

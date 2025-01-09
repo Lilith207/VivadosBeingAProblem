@@ -1,14 +1,15 @@
-
-*** Running vivado
-    with args -log TopLevel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel.tcl
-
-
-
-****** Vivado v2022.2 (64-bit)
-  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
-  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jan  9 10:27:39 2025
+# Process ID: 6812
+# Current directory: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1
+# Command line: vivado.exe -log TopLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel.tcl
+# Log file: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/TopLevel.vds
+# Journal file: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16936 MB
+#-----------------------------------------------------------
 source TopLevel.tcl -notrace
 Command: synth_design -top TopLevel -part xc7z010clg400-1
 Starting synth_design
@@ -16,31 +17,31 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24088
+INFO: [Synth 8-7075] Helper process launched with PID 24460
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1385.461 ; gain = 410.195
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1385.551 ; gain = 410.875
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:27]
 	Parameter max_value bound to: 200000 - type: integer 
 	Parameter bitnumber bound to: 18 - type: integer 
-INFO: [Synth 8-3491] module 'PWM' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/PWM.vhd:5' bound to instance 'PWMT' of component 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:87]
-INFO: [Synth 8-638] synthesizing module 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/PWM.vhd:17]
+INFO: [Synth 8-3491] module 'PWM' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:5' bound to instance 'PWMT' of component 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:17]
 	Parameter max_value bound to: 200000 - type: integer 
 	Parameter bitnumber bound to: 18 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'PWM' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/PWM.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'PWM' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:17]
 	Parameter PosiBits bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/Encoder.vhd:5' bound to instance 'EncoderT' of component 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/Encoder.vhd:16]
+INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:5' bound to instance 'EncoderT' of component 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:16]
 	Parameter PosiBits bound to: 8 - type: integer 
-WARNING: [Synth 8-614] signal 'BBB' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/Encoder.vhd:22]
-WARNING: [Synth 8-614] signal 'AAA' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/Encoder.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'Encoder' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/Encoder.vhd:16]
-WARNING: [Synth 8-5640] Port 'clk' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:38]
-WARNING: [Synth 8-5640] Port 'position' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:38]
-WARNING: [Synth 8-5640] Port 'set_point' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:38]
-WARNING: [Synth 8-5640] Port 'power' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:38]
-WARNING: [Synth 8-5640] Port 'errorout' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:38]
+WARNING: [Synth 8-614] signal 'BBB' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:22]
+WARNING: [Synth 8-614] signal 'AAA' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'Encoder' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:16]
+WARNING: [Synth 8-5640] Port 'clk' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:38]
+WARNING: [Synth 8-5640] Port 'position' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:38]
+WARNING: [Synth 8-5640] Port 'set_point' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:38]
+WARNING: [Synth 8-5640] Port 'power' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:38]
+WARNING: [Synth 8-5640] Port 'errorout' is missing in component declaration [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:38]
 	Parameter KBits bound to: 24 - type: integer 
 	Parameter KDetail bound to: 100000 - type: integer 
 	Parameter IntegralBits bound to: 13 - type: integer 
@@ -49,8 +50,8 @@ WARNING: [Synth 8-5640] Port 'errorout' is missing in component declaration [C:/
 	Parameter MaxPower bound to: 200000 - type: integer 
 	Parameter MaxPowerBits bound to: 18 - type: integer 
 	Parameter PIDCLKTS bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'PID' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/PID.vhd:6' bound to instance 'PIDT' of component 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:114]
-INFO: [Synth 8-638] synthesizing module 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/PID.vhd:29]
+INFO: [Synth 8-3491] module 'PID' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:6' bound to instance 'PIDT' of component 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:29]
 	Parameter KBits bound to: 24 - type: integer 
 	Parameter KDetail bound to: 100000 - type: integer 
 	Parameter IntegralBits bound to: 13 - type: integer 
@@ -59,33 +60,33 @@ INFO: [Synth 8-638] synthesizing module 'PID' [C:/VivadoBullshit/VivadosBeingAPr
 	Parameter MaxPower bound to: 200000 - type: integer 
 	Parameter MaxPowerBits bound to: 18 - type: integer 
 	Parameter PIDCLKTS bound to: 100 - type: integer 
-WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/PID.vhd:60]
-WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/PID.vhd:60]
-WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/PID.vhd:60]
-INFO: [Synth 8-256] done synthesizing module 'PID' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/PID.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:27]
-WARNING: [Synth 8-3848] Net ErrorOut in module/entity PID does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/PID.vhd:25]
-WARNING: [Synth 8-3848] Net POWER in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:82]
-WARNING: [Synth 8-3848] Net Kp in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:83]
-WARNING: [Synth 8-3848] Net Kd in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:83]
-WARNING: [Synth 8-3848] Net Ki in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd:83]
+WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
+WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
+WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'PID' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:27]
+WARNING: [Synth 8-3848] Net ErrorOut in module/entity PID does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:25]
+WARNING: [Synth 8-3848] Net POWER in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:82]
+WARNING: [Synth 8-3848] Net Kp in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:83]
+WARNING: [Synth 8-3848] Net Kd in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:83]
+WARNING: [Synth 8-3848] Net Ki in module/entity TopLevel does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:83]
 WARNING: [Synth 8-7129] Port ErrorOut in module PID is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1477.664 ; gain = 502.398
+Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1476.766 ; gain = 502.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1477.664 ; gain = 502.398
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1476.766 ; gain = 502.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1477.664 ; gain = 502.398
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1476.766 ; gain = 502.090
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1477.664 ; gain = 502.398
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1476.766 ; gain = 502.090
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -138,20 +139,20 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1663.754 ; gain = 689.078
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Finished Timing Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1663.754 ; gain = 689.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Finished Technology Mapping : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1663.754 ; gain = 689.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -169,37 +170,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -227,16 +228,16 @@ Report Instance Areas:
 |1     |top      |       |     4|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1667.715 ; gain = 692.449
-Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1667.715 ; gain = 692.449
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.754 ; gain = 689.078
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1678.695 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1673.750 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1777.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1773.438 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -244,6 +245,7 @@ Synth Design complete, checksum: a6ef5d43
 INFO: [Common 17-83] Releasing license: Synthesis
 22 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1777.320 ; gain = 826.930
-ERROR: [Common 17-1293] The path 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.runs/synth_1' already exists, is a directory, but is not writable.
-INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 10:23:41 2025...
+synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1773.438 ; gain = 823.637
+INFO: [Common 17-1381] The checkpoint 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/TopLevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopLevel_utilization_synth.rpt -pb TopLevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 10:27:57 2025...

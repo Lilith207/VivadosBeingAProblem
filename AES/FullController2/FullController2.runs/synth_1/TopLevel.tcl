@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.runs/synth_1/TopLevel.tcl"
+  variable script "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/TopLevel.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,20 +76,20 @@ create_project -in_memory -part xc7z010clg400-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.cache/wt [current_project]
-set_property parent.project_path C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.xpr [current_project]
+set_property webtalk.parent_dir C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.cache/wt [current_project]
+set_property parent.project_path C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
-set_property ip_output_repo c:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.cache/ip [current_project]
+set_property ip_output_repo c:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/Encoder.vhd
-  C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/PID.vhd
-  C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/PWM.vhd
-  C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.srcs/sources_1/new/TopLevel.vhd
+  C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd
+  C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd
+  C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd
+  C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

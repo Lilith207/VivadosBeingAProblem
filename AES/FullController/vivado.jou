@@ -2,21 +2,39 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Jan  9 10:07:43 2025
-# Process ID: 24004
-# Current directory: C:/OneDrive/OneDrive - Office 365 Fontys/DMD_AES practicals/AES/FullController
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15028 C:\OneDrive\OneDrive - Office 365 Fontys\DMD_AES practicals\AES\FullController\fullcontroller.xpr
-# Log file: C:/OneDrive/OneDrive - Office 365 Fontys/DMD_AES practicals/AES/FullController/vivado.log
-# Journal file: C:/OneDrive/OneDrive - Office 365 Fontys/DMD_AES practicals/AES/FullController\vivado.jou
+# Start of session at: Thu Jan  9 10:21:19 2025
+# Process ID: 2668
+# Current directory: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25792 C:\VivadoBullshit\VivadosBeingAProblem\AES\FullController\fullcontroller.xpr
+# Log file: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/vivado.log
+# Journal file: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController\vivado.jou
 # Running On: MSI, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16936 MB
 #-----------------------------------------------------------
 start_gui
-open_project {C:/OneDrive/OneDrive - Office 365 Fontys/DMD_AES practicals/AES/FullController/fullcontroller.xpr}
-launch_runs synth_1 -jobs 28
-wait_on_run synth_1
+open_project C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.xpr
 reset_run synth_1
 launch_runs synth_1 -jobs 28
 wait_on_run synth_1
 reset_run synth_1
 launch_runs synth_1 -jobs 28
 wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+wait_on_run synth_1
+import_files
+close_project
+create_project FullController2 C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2 -part xc7z010clg400-1
+set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse {C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TopLevel [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_runs synth_1 -jobs 28
+wait_on_run synth_1
+launch_runs impl_1 -jobs 28
+wait_on_run impl_1

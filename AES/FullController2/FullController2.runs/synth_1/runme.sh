@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController/fullcontroller.runs/synth_1'
+HD_PWD='C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
