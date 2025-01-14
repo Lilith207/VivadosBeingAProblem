@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Thu Jan  9 10:28:47 2025
+| Date         : Tue Jan 14 17:56:08 2025
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_drc -file TopLevel_drc_routed.rpt -pb TopLevel_drc_routed.pb -rpx TopLevel_drc_routed.rpx
 | Design       : TopLevel
@@ -24,25 +24,181 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 3
-+--------+------------------+----------------------------+------------+
-| Rule   | Severity         | Description                | Violations |
-+--------+------------------+----------------------------+------------+
-| NSTD-1 | Critical Warning | Unspecified I/O Standard   | 1          |
-| UCIO-1 | Critical Warning | Unconstrained Logical Port | 1          |
-| ZPS7-1 | Warning          | PS7 block required         | 1          |
-+--------+------------------+----------------------------+------------+
+             Violations found: 33
++----------+------------------+----------------------------+------------+
+| Rule     | Severity         | Description                | Violations |
++----------+------------------+----------------------------+------------+
+| NSTD-1   | Critical Warning | Unspecified I/O Standard   | 1          |
+| UCIO-1   | Critical Warning | Unconstrained Logical Port | 1          |
+| DPIP-1   | Warning          | Input pipelining           | 8          |
+| DPOP-1   | Warning          | PREG Output pipelining     | 3          |
+| DPOP-2   | Warning          | MREG Output pipelining     | 2          |
+| PDRC-153 | Warning          | Gated clock check          | 17         |
+| ZPS7-1   | Warning          | PS7 block required         | 1          |
++----------+------------------+----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 NSTD-1#1 Critical Warning
 Unspecified I/O Standard  
-4 out of 4 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: PWM_DIRECTION, PWM_ERROR, PWM_OUT, RST.
+100 out of 100 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: A, B, CLK, CPU_Position[14:0], Kd[20:0], Ki[20:0], Kp[20:0], PWM_DIRECTION,
+PWM_ERROR, PWM_OUT, RST, Set_point[14:0].
 Related violations: <none>
 
 UCIO-1#1 Critical Warning
 Unconstrained Logical Port  
-4 out of 4 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: PWM_DIRECTION, PWM_ERROR, PWM_OUT, RST.
+100 out of 100 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: A, B, CLK, CPU_Position[14:0], Kd[20:0], Ki[20:0], Kp[20:0], PWM_DIRECTION,
+PWM_ERROR, PWM_OUT, RST, Set_point[14:0].
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP PIDT/POWER10 input PIDT/POWER10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP PIDT/POWER10 input PIDT/POWER10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP PIDT/POWER10__0 input PIDT/POWER10__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP PIDT/POWER8 input PIDT/POWER8/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP PIDT/POWER8 input PIDT/POWER8/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP PIDT/POWER8 input PIDT/POWER8/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP PIDT/POWER9 input PIDT/POWER9/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP PIDT/POWER9 input PIDT/POWER9/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP PIDT/POWER10 output PIDT/POWER10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP PIDT/POWER10__0 output PIDT/POWER10__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP PIDT/POWER8 output PIDT/POWER8/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP PIDT/POWER10 multiplier stage PIDT/POWER10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP PIDT/POWER10__0 multiplier stage PIDT/POWER10__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net EncoderT/Prevstate_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin EncoderT/Prevstate_reg[0]_LDC_i_1/O, cell EncoderT/Prevstate_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net EncoderT/Prevstate_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin EncoderT/Prevstate_reg[1]_LDC_i_1/O, cell EncoderT/Prevstate_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net PIDT/PError_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[0]_LDC_i_1/O, cell PIDT/PError_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net PIDT/PError_reg[10]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[10]_LDC_i_1/O, cell PIDT/PError_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net PIDT/PError_reg[11]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[11]_LDC_i_1/O, cell PIDT/PError_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net PIDT/PError_reg[12]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[12]_LDC_i_1/O, cell PIDT/PError_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net PIDT/PError_reg[13]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[13]_LDC_i_1/O, cell PIDT/PError_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net PIDT/PError_reg[14]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[14]_LDC_i_1/O, cell PIDT/PError_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net PIDT/PError_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[1]_LDC_i_1/O, cell PIDT/PError_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net PIDT/PError_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[2]_LDC_i_1/O, cell PIDT/PError_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net PIDT/PError_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[3]_LDC_i_1/O, cell PIDT/PError_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net PIDT/PError_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[4]_LDC_i_1/O, cell PIDT/PError_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net PIDT/PError_reg[5]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[5]_LDC_i_1/O, cell PIDT/PError_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net PIDT/PError_reg[6]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[6]_LDC_i_1/O, cell PIDT/PError_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net PIDT/PError_reg[7]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[7]_LDC_i_1/O, cell PIDT/PError_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net PIDT/PError_reg[8]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[8]_LDC_i_1/O, cell PIDT/PError_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net PIDT/PError_reg[9]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin PIDT/PError_reg[9]_LDC_i_1/O, cell PIDT/PError_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 ZPS7-1#1 Warning

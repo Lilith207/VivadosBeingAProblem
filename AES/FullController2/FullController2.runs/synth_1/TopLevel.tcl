@@ -100,7 +100,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc
+set_property used_in_implementation false [get_files C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/utils_1/imports/synth_1/TopLevel.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

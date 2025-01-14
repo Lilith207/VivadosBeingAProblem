@@ -138,6 +138,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/TopLevel.dcp
 OPTRACE "read constraints: implementation" START { }
+  read_xdc C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

@@ -4,7 +4,8 @@ use IEEE.numeric_std.all;
 
 entity Encoder is
     generic (
-        PosiBits: integer
+        PosiBits: integer;
+        MaxPosition: integer
     );
     Port (
         CLK, RST, A, B: in std_logic;
@@ -45,6 +46,11 @@ architecture Behaviour of Encoder is
             AAA <= AA;
             BBB <= BB;
             Prevstate <= state;
+            if Poss > MaxPosition then
+                Poss <= to_signed(MaxPosition, PosiBits+1);
+            elsif Poss < -MaxPosition then
+                Poss <= to_signed(-MaxPosition, PosiBits+1);
+            end if;
         end if;
     end process;
     
