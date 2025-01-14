@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="6.000001 us"></ZoomEndTime>
-      <Cursor1Time time="6.000000 us"></Cursor1Time>
+      <ZoomStartTime time="0.876000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="9.426000001 ms"></ZoomEndTime>
+      <Cursor1Time time="6.816000000 ms"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="160"></NameColumnWidth>
-      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+      <ValueColumnWidth column_width="100"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="20" />
    <wvobject fp_name="/TotalSystem_TB/tb_CLK" type="logic">
       <obj_property name="ElementShortName">tb_CLK</obj_property>
       <obj_property name="ObjectShortName">tb_CLK</obj_property>
@@ -80,14 +80,34 @@
       <obj_property name="ElementShortName">PositionBits</obj_property>
       <obj_property name="ObjectShortName">PositionBits</obj_property>
    </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/UUT/PIDT/Derivative" type="array">
+      <obj_property name="ElementShortName">Derivative[23:0]</obj_property>
+      <obj_property name="ObjectShortName">Derivative[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/UUT/PIDT/Integral" type="array">
+      <obj_property name="ElementShortName">Integral[23:0]</obj_property>
+      <obj_property name="ObjectShortName">Integral[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
    <wvobject fp_name="/TotalSystem_TB/UUT/PIDT/Error" type="array">
       <obj_property name="ElementShortName">Error[8:0]</obj_property>
       <obj_property name="ObjectShortName">Error[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/UUT/PIDT/PError" type="array">
+      <obj_property name="ElementShortName">PError[8:0]</obj_property>
+      <obj_property name="ObjectShortName">PError[8:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/TotalSystem_TB/UUT/PWMT/POWER" type="array">
       <obj_property name="ElementShortName">POWER[18:0]</obj_property>
       <obj_property name="ObjectShortName">POWER[18:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TotalSystem_TB/UUT/PWMT/Cntr" type="array">
+      <obj_property name="ElementShortName">Cntr[17:0]</obj_property>
+      <obj_property name="ObjectShortName">Cntr[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

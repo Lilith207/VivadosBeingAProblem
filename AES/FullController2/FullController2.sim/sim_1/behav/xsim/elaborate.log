@@ -13,8 +13,8 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package ieee.math_real
 Compiling architecture behavioral of entity xil_defaultlib.PWM [\PWM(max_value=200000,bitnumber=...]
-Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=8)\]
+Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=14,maxposition...]
 Compiling architecture behavioral of entity xil_defaultlib.PID [\PID(kbits=20,kdetail=100000,int...]
-Compiling architecture behavioral of entity xil_defaultlib.TopLevel [toplevel_default]
+Compiling architecture behavioral of entity xil_defaultlib.TopLevel [\TopLevel(pidclkts=100)\]
 Compiling architecture behavioral of entity xil_defaultlib.totalsystem_tb
 Built simulation snapshot TotalSystem_TB_behav

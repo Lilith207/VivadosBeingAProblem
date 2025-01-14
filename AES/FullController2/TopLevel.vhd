@@ -9,14 +9,14 @@ entity TopLevel is
         DetailK : integer := 5; --amount of numbers behind the comma it should have in detail
         MaxBitsK : integer := 20; --the amount of bits to be used for k
         
-        MaxIntegral : integer := 5000;
+        MaxIntegral : integer := 5000000;
         
         PWM_Period : integer := 200000; --in NS (nano seconds)
         CLK_SPD : integer := 125; --in MHz (mega hertz, to make hertz you multiply with 10^6)
         
-        MaxPosition : integer := 200; --this is determined by size of the max size of setpoint
-        PositionBits : integer := 8;
-        PIDCLKTS : integer := 100
+        MaxPosition : integer := 10000; --this is determined by size of the max size of setpoint
+        PositionBits : integer := 14;
+        PIDCLKTS : integer := 10
     );
     Port 
     ( 
@@ -30,7 +30,7 @@ end TopLevel;
 
 architecture Behavioral of TopLevel is
 
-constant CLK_Period : integer := integer(ceil(real(1)/real(CLK_SPD)));
+constant CLK_Period : real := real(ceil(real(1)/real(CLK_SPD)));
 constant MaxPower : integer := integer(ceil(real(PWM_Period)/real(CLK_Period)));
 constant FullKDetail : integer := 10**DetailK;
 
@@ -52,7 +52,7 @@ component PID
         PIDCLKTS : integer
     );
     Port (
-        CLK : in std_logic;
+        CLK, RST : in std_logic;
         Position, Set_point : in std_logic_vector(MaxPositionBits downto 0); 
         Kp, Kd, Ki : in std_logic_vector(KBits downto 0);
         POWER : out std_logic_vector(MaxPowerBits downto 0);
@@ -74,7 +74,8 @@ end component;
 
 component Encoder
     generic (
-        PosiBits: integer
+        PosiBits: integer;
+        MaxPosition: integer
     );
     Port (
         CLK, RST, A, B: in std_logic;
@@ -106,7 +107,8 @@ begin
         
      EncoderT : Encoder
         generic map (
-            Posibits => PositionBits
+            Posibits => PositionBits,
+            MaxPosition => MaxPosition
         )
         port map (
             CLK => CLK,
@@ -136,7 +138,8 @@ begin
             Ki => Ki,
             Kd => Kd,
             POWER => POWER,
-            ErrorOut => ErrorOut
+            ErrorOut => ErrorOut,
+            RST => RST
          );
          
          CPU_Position <= POSITION; --to pass position to the CPU too

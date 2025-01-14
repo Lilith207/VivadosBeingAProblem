@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Thu Jan  9 14:18:49 2025
+| Date         : Tue Jan 14 17:55:45 2025
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TopLevel_control_sets_placed.rpt
 | Design       : TopLevel
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    16 |
-|    Minimum number of control sets                        |    16 |
+| Total control sets                                       |    57 |
+|    Minimum number of control sets                        |    57 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    80 |
+| Unused register locations in slices containing registers |   378 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    16 |
-| >= 0 to < 4        |     8 |
-| >= 4 to < 6        |     2 |
-| >= 6 to < 8        |     1 |
-| >= 8 to < 10       |     2 |
+| Total control sets |    57 |
+| >= 0 to < 4        |    53 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
-| >= 12 to < 14      |     1 |
-| >= 14 to < 16      |     1 |
-| >= 16              |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |     2 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -59,36 +59,77 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               2 |            1 |
-| No           | No                    | Yes                    |               4 |            4 |
-| No           | Yes                   | No                     |              28 |           10 |
-| Yes          | No                    | No                     |              16 |            6 |
-| Yes          | No                    | Yes                    |               9 |            3 |
-| Yes          | Yes                   | No                     |              29 |           10 |
+| No           | No                    | Yes                    |              51 |           20 |
+| No           | Yes                   | No                     |              35 |           22 |
+| Yes          | No                    | No                     |              17 |            7 |
+| Yes          | No                    | Yes                    |              45 |           32 |
+| Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------------------+--------------------------+---------------------------------------+------------------+----------------+--------------+
-|              Clock Signal              |       Enable Signal      |            Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------------------------------+--------------------------+---------------------------------------+------------------+----------------+--------------+
-|  CLK_IBUF_BUFG                         |                          | EncoderT/Prevstate_reg[1]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                         |                          | EncoderT/Prevstate_reg[0]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                         |                          | EncoderT/Prevstate_reg[0]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                         |                          | EncoderT/Prevstate_reg[1]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
-|  EncoderT/Prevstate_reg[0]_LDC_i_1_n_0 |                          | EncoderT/Prevstate_reg[0]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  EncoderT/Prevstate_reg[1]_LDC_i_1_n_0 |                          | EncoderT/Prevstate_reg[1]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                         |                          |                                       |                1 |              2 |         2.00 |
-|  CLK_IBUF_BUFG                         | EncoderT/PWMT/PWM_OUT1   |                                       |                1 |              2 |         2.00 |
-|  CLK_IBUF_BUFG                         | PIDT/POWER               | PIDT/Integral[12]_i_1_n_0             |                1 |              4 |         4.00 |
-|  CLK_IBUF_BUFG                         | PIDT/POWER               | PIDT/Integral[11]_i_1_n_0             |                3 |              5 |         1.67 |
-|  CLK_IBUF_BUFG                         | PIDT/POWER               | PIDT/POWER[6]_i_1_n_0                 |                2 |              7 |         3.50 |
-|  CLK_IBUF_BUFG                         |                          | PIDT/POWER                            |                3 |              8 |         2.67 |
-|  CLK_IBUF_BUFG                         | EncoderT/Poss[8]_i_1_n_0 | PWM_DIRECTION_TRI                     |                3 |              9 |         3.00 |
-|  CLK_IBUF_BUFG                         | PIDT/POWER[18]_i_2_n_0   | PIDT/POWER[18]_i_1_n_0                |                4 |             13 |         3.25 |
-|  CLK_IBUF_BUFG                         | PIDT/POWER               |                                       |                5 |             14 |         2.80 |
-|  CLK_IBUF_BUFG                         |                          | PWMT/Cntr[0]_i_1_n_0                  |                5 |             18 |         3.60 |
-+----------------------------------------+--------------------------+---------------------------------------+------------------+----------------+--------------+
++----------------------------------------+------------------------+---------------------------------------+------------------+----------------+--------------+
+|              Clock Signal              |      Enable Signal     |            Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+------------------------+---------------------------------------+------------------+----------------+--------------+
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[10]_LDC_i_1_n_0       |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[2]_LDC_i_1_n_0        |                        | PIDT/PError_reg[2]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  EncoderT/Prevstate_reg[1]_LDC_i_1_n_0 |                        | EncoderT/Prevstate_reg[1]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         |                        | EncoderT/Prevstate_reg[1]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         |                        | EncoderT/Prevstate_reg[0]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         |                        | EncoderT/Prevstate_reg[1]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         |                        | EncoderT/Prevstate_reg[0]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[4]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[12]_LDC_i_1_n_0       |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[0]_LDC_i_1_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[0]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[11]_LDC_i_2_n_0       |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[12]_LDC_i_2_n_0       |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[13]_LDC_i_1_n_0       |                1 |              1 |         1.00 |
+|  EncoderT/Prevstate_reg[0]_LDC_i_1_n_0 |                        | EncoderT/Prevstate_reg[0]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[10]_LDC_i_2_n_0       |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[11]_LDC_i_1_n_0       |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[13]_LDC_i_2_n_0       |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[7]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[3]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[3]_LDC_i_1_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[1]_LDC_i_1_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[1]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[9]_LDC_i_1_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[6]_LDC_i_1_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[5]_LDC_i_1_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[14]_LDC_i_1_n_0       |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[2]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[5]_LDC_i_1_n_0        |                        | PIDT/PError_reg[5]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[9]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[4]_LDC_i_1_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[5]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[14]_LDC_i_2_n_0       |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[6]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[7]_LDC_i_1_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[8]_LDC_i_1_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[8]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | PIDT/PError            | PIDT/PError_reg[2]_LDC_i_1_n_0        |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[12]_LDC_i_1_n_0       |                        | PIDT/PError_reg[12]_LDC_i_2_n_0       |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[0]_LDC_i_1_n_0        |                        | PIDT/PError_reg[0]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[13]_LDC_i_1_n_0       |                        | PIDT/PError_reg[13]_LDC_i_2_n_0       |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[10]_LDC_i_1_n_0       |                        | PIDT/PError_reg[10]_LDC_i_2_n_0       |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[11]_LDC_i_1_n_0       |                        | PIDT/PError_reg[11]_LDC_i_2_n_0       |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[3]_LDC_i_1_n_0        |                        | PIDT/PError_reg[3]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[1]_LDC_i_1_n_0        |                        | PIDT/PError_reg[1]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[9]_LDC_i_1_n_0        |                        | PIDT/PError_reg[9]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[6]_LDC_i_1_n_0        |                        | PIDT/PError_reg[6]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[14]_LDC_i_1_n_0       |                        | PIDT/PError_reg[14]_LDC_i_2_n_0       |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[4]_LDC_i_1_n_0        |                        | PIDT/PError_reg[4]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[7]_LDC_i_1_n_0        |                        | PIDT/PError_reg[7]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  PIDT/PError_reg[8]_LDC_i_1_n_0        |                        | PIDT/PError_reg[8]_LDC_i_2_n_0        |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | EncoderT/PWMT/PWM_OUT1 |                                       |                2 |              2 |         1.00 |
+|  CLK_IBUF_BUFG                         |                        |                                       |                1 |              2 |         2.00 |
+|  CLK_IBUF_BUFG                         | PIDT/Derivative0       |                                       |                5 |             15 |         3.00 |
+|  CLK_IBUF_BUFG                         | EncoderT/Poss          | PWM_DIRECTION_TRI                     |                2 |             15 |         7.50 |
+|  CLK_IBUF_BUFG                         |                        | PWMT/Cntr[0]_i_1_n_0                  |                5 |             18 |         3.60 |
+|  CLK_IBUF_BUFG                         |                        | PWM_DIRECTION_TRI                     |               16 |             47 |         2.94 |
++----------------------------------------+------------------------+---------------------------------------+------------------+----------------+--------------+
 
 

@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Jan  9 13:49:19 2025
-# Process ID: 5900
+# Start of session at: Tue Jan 14 17:26:13 2025
+# Process ID: 19072
 # Current directory: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2292 C:\VivadoBullshit\VivadosBeingAProblem\AES\FullController2\FullController2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25968 C:\VivadoBullshit\VivadosBeingAProblem\AES\FullController2\FullController2.xpr
 # Log file: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/vivado.log
 # Journal file: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2\vivado.jou
 # Running On: MSI, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16936 MB
@@ -41,547 +41,38 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1750.191 ; gain = 408.055
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1763.973 ; gain = 376.379
 update_compile_order -fileset sources_1
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'Encoder_tb'
+INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
 WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'Encoder_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'TotalSystem_TB' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Encoder_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Encoder_tb'
-ERROR: [VRFC 10-2989] 'kp' is not declared [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:50]
-ERROR: [VRFC 10-2989] 'ki' is not declared [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:51]
-ERROR: [VRFC 10-2989] 'kd' is not declared [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:52]
-ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:8]
-INFO: [VRFC 10-8704] VHDL file 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd' is ignored due to errors
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1766.273 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/xvhdl.log'
-ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1766.273 ; gain = 0.000
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
-Starting synth_design
-Using part: xc7z010clg400-1
-Top: TopLevel
-INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2540.730 ; gain = 399.852
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:31]
-	Parameter max_value bound to: 200000 - type: integer 
-	Parameter bitnumber bound to: 18 - type: integer 
-INFO: [Synth 8-3491] module 'PWM' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:5' bound to instance 'PWMT' of component 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:17]
-	Parameter max_value bound to: 200000 - type: integer 
-	Parameter bitnumber bound to: 18 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'PWM' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:17]
-	Parameter PosiBits bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:5' bound to instance 'EncoderT' of component 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:16]
-	Parameter PosiBits bound to: 8 - type: integer 
-WARNING: [Synth 8-614] signal 'BBB' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:22]
-WARNING: [Synth 8-614] signal 'AAA' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'Encoder' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:16]
-	Parameter KBits bound to: 32 - type: integer 
-	Parameter KDetail bound to: 100000 - type: integer 
-	Parameter IntegralBits bound to: 13 - type: integer 
-	Parameter MaxIntegral bound to: 5000 - type: integer 
-	Parameter MaxPositionBits bound to: 8 - type: integer 
-	Parameter MaxPower bound to: 200000 - type: integer 
-	Parameter MaxPowerBits bound to: 18 - type: integer 
-	Parameter PIDCLKTS bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'PID' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:6' bound to instance 'PIDT' of component 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:120]
-INFO: [Synth 8-638] synthesizing module 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:29]
-	Parameter KBits bound to: 32 - type: integer 
-	Parameter KDetail bound to: 100000 - type: integer 
-	Parameter IntegralBits bound to: 13 - type: integer 
-	Parameter MaxIntegral bound to: 5000 - type: integer 
-	Parameter MaxPositionBits bound to: 8 - type: integer 
-	Parameter MaxPower bound to: 200000 - type: integer 
-	Parameter MaxPowerBits bound to: 18 - type: integer 
-	Parameter PIDCLKTS bound to: 100 - type: integer 
-WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
-WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
-WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
-INFO: [Synth 8-256] done synthesizing module 'PID' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:31]
-WARNING: [Synth 8-3848] Net ErrorOut in module/entity PID does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:25]
-WARNING: [Synth 8-7129] Port ErrorOut in module PID is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Kp[32] in module PID is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Kd[32] in module PID is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Ki[32] in module PID is either unconnected or has no load
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2631.996 ; gain = 491.117
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2631.996 ; gain = 491.117
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2631.996 ; gain = 491.117
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2631.996 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'POSITION[0]'. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'POSITION[1]'. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:25]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'POSITION[2]'. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:26]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ENC_ERROR'. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2686.695 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2796.457 ; gain = 655.578
-15 Infos, 14 Warnings, 4 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 2796.457 ; gain = 976.418
-reset_run synth_1
-INFO: [Project 1-1160] Copying file C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/TopLevel.dcp to C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/utils_1/imports/synth_1 and adding it to utils fileset
-launch_runs impl_1 -to_step write_bitstream -jobs 28
-[Thu Jan  9 14:06:04 2025] Launched synth_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/runme.log
-[Thu Jan  9 14:06:04 2025] Launched impl_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1/runme.log
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'Encoder_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'Encoder_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Encoder_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TopLevel'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Encoder_tb'
+"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Encoder_tb_behav xil_defaultlib.Encoder_tb -log elaborate.log"
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Encoder_tb_behav xil_defaultlib.Encoder_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-ERROR: [VRFC 10-666] expression has 32 elements; expected 33 [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:44]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit encoder_tb in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'Encoder_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'Encoder_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Encoder_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Encoder_tb'
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Encoder_tb_behav xil_defaultlib.Encoder_tb -log elaborate.log"
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Encoder_tb_behav xil_defaultlib.Encoder_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-666] expression has 20 elements; expected 21 [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:44]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit encoder_tb in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 28
-[Thu Jan  9 14:08:27 2025] Launched impl_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1/runme.log
-refresh_design
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 2856.102 ; gain = 15.230
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:31]
-	Parameter max_value bound to: 200000 - type: integer 
-	Parameter bitnumber bound to: 18 - type: integer 
-INFO: [Synth 8-3491] module 'PWM' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:5' bound to instance 'PWMT' of component 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:17]
-	Parameter max_value bound to: 200000 - type: integer 
-	Parameter bitnumber bound to: 18 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'PWM' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:17]
-	Parameter PosiBits bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:5' bound to instance 'EncoderT' of component 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:16]
-	Parameter PosiBits bound to: 8 - type: integer 
-WARNING: [Synth 8-614] signal 'BBB' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:22]
-WARNING: [Synth 8-614] signal 'AAA' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'Encoder' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:16]
-	Parameter KBits bound to: 20 - type: integer 
-	Parameter KDetail bound to: 100000 - type: integer 
-	Parameter IntegralBits bound to: 13 - type: integer 
-	Parameter MaxIntegral bound to: 5000 - type: integer 
-	Parameter MaxPositionBits bound to: 8 - type: integer 
-	Parameter MaxPower bound to: 200000 - type: integer 
-	Parameter MaxPowerBits bound to: 18 - type: integer 
-	Parameter PIDCLKTS bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'PID' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:6' bound to instance 'PIDT' of component 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:120]
-INFO: [Synth 8-638] synthesizing module 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:29]
-	Parameter KBits bound to: 20 - type: integer 
-	Parameter KDetail bound to: 100000 - type: integer 
-	Parameter IntegralBits bound to: 13 - type: integer 
-	Parameter MaxIntegral bound to: 5000 - type: integer 
-	Parameter MaxPositionBits bound to: 8 - type: integer 
-	Parameter MaxPower bound to: 200000 - type: integer 
-	Parameter MaxPowerBits bound to: 18 - type: integer 
-	Parameter PIDCLKTS bound to: 100 - type: integer 
-WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
-WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:60]
-INFO: [Synth 8-256] done synthesizing module 'PID' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:31]
-WARNING: [Synth 8-3848] Net ErrorOut in module/entity PID does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:25]
-WARNING: [Synth 8-7129] Port ErrorOut in module PID is either unconnected or has no load
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 2947.801 ; gain = 106.930
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 2971.688 ; gain = 130.816
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 2971.688 ; gain = 130.816
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3004.836 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'POSITION[0]'. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'POSITION[1]'. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:25]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'POSITION[2]'. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:26]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ENC_ERROR'. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
-Completed Processing XDC Constraints
-
-refresh_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3004.836 ; gain = 163.965
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/utils_1/imports/synth_1/TopLevel.dcp with file C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/TopLevel.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 28
-[Thu Jan  9 14:09:34 2025] Launched synth_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/runme.log
-[Thu Jan  9 14:09:34 2025] Launched impl_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1/runme.log
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 28
-[Thu Jan  9 14:10:49 2025] Launched impl_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/utils_1/imports/synth_1/TopLevel.dcp with file C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/TopLevel.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 28
-[Thu Jan  9 14:15:43 2025] Launched synth_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/runme.log
-[Thu Jan  9 14:15:43 2025] Launched impl_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/utils_1/imports/synth_1/TopLevel.dcp with file C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/TopLevel.dcp
-launch_runs synth_1 -jobs 28
-[Thu Jan  9 14:17:44 2025] Launched synth_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 28
-[Thu Jan  9 14:18:21 2025] Launched impl_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 28
-[Thu Jan  9 14:20:09 2025] Launched impl_1...
-Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1/runme.log
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'Encoder_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'Encoder_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Encoder_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TopLevel'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Encoder_tb'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Encoder_tb_behav xil_defaultlib.Encoder_tb -log elaborate.log"
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Encoder_tb_behav xil_defaultlib.Encoder_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.math_real
-Compiling architecture behavioral of entity xil_defaultlib.PWM [\PWM(max_value=200000,bitnumber=...]
-Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=8)\]
-Compiling architecture behavioral of entity xil_defaultlib.PID [\PID(kbits=20,kdetail=100000,int...]
-Compiling architecture behavioral of entity xil_defaultlib.TopLevel [toplevel_default]
-Compiling architecture behavioral of entity xil_defaultlib.encoder_tb
-Built simulation snapshot Encoder_tb_behav
+ERROR: [VRFC 10-8944] expression has 9 elements; formal 'cpu_position' expects 15 [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:65]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit totalsystem_tb in library work failed.
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Encoder_tb_behav -key {Behavioral:sim_1:Functional:Encoder_tb} -tclbatch {Encoder_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source Encoder_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Encoder_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3004.836 ; gain = 0.000
-save_wave_config {C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg
-set_property xsim.view C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg [get_filesets sim_1]
-run 5 ms
-set_property top TotalSystem_TB [get_filesets sim_1]
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'TotalSystem_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TotalSystem_TB'
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.math_real
-Compiling architecture behavioral of entity xil_defaultlib.PWM [\PWM(max_value=200000,bitnumber=...]
-Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=8)\]
-Compiling architecture behavioral of entity xil_defaultlib.PID [\PID(kbits=20,kdetail=100000,int...]
-Compiling architecture behavioral of entity xil_defaultlib.TopLevel [toplevel_default]
-Compiling architecture behavioral of entity xil_defaultlib.totalsystem_tb
-Built simulation snapshot TotalSystem_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Time resolution is 1 ps
-run 5 ms
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Time resolution is 1 ps
-run 5 us
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TotalSystem_TB'
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.math_real
-Compiling architecture behavioral of entity xil_defaultlib.PWM [\PWM(max_value=200000,bitnumber=...]
-Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=8)\]
-Compiling architecture behavioral of entity xil_defaultlib.PID [\PID(kbits=20,kdetail=100000,int...]
-Compiling architecture behavioral of entity xil_defaultlib.TopLevel [toplevel_default]
-Compiling architecture behavioral of entity xil_defaultlib.totalsystem_tb
-Built simulation snapshot TotalSystem_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Time resolution is 1 ps
-add_bp {C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd} 65
-remove_bps -file {C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd} -line 65
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TotalSystem_TB'
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-8944] expression has 21 elements; formal 'cpu_position' expects 9 [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:64]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit totalsystem_tb in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 INFO: [USF-XSim-99] Step results log file:'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log'
 ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
 ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
 ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
@@ -605,7 +96,7 @@ Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-ERROR: [VRFC 10-8944] expression has 21 elements; formal 'cpu_position' expects 9 [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:64]
+ERROR: [VRFC 10-8944] expression has 9 elements; formal 'cpu_position' expects 15 [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:65]
 ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit totalsystem_tb in library work failed.
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 INFO: [USF-XSim-99] Step results log file:'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log'
@@ -628,31 +119,7 @@ INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/V
 "xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'TotalSystem_TB'
-ERROR: [VRFC 10-2989] 'positionbits' is not declared [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:43]
-ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd:8]
-INFO: [VRFC 10-8704] VHDL file 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd' is ignored due to errors
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/xvhdl.log'
-ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'TotalSystem_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TotalSystem_TB'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
@@ -671,12 +138,12 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package ieee.math_real
 Compiling architecture behavioral of entity xil_defaultlib.PWM [\PWM(max_value=200000,bitnumber=...]
-Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=8)\]
+Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=14)\]
 Compiling architecture behavioral of entity xil_defaultlib.PID [\PID(kbits=20,kdetail=100000,int...]
-Compiling architecture behavioral of entity xil_defaultlib.TopLevel [toplevel_default]
+Compiling architecture behavioral of entity xil_defaultlib.TopLevel [\TopLevel(pidclkts=100)\]
 Compiling architecture behavioral of entity xil_defaultlib.totalsystem_tb
 Built simulation snapshot TotalSystem_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -684,18 +151,6 @@ INFO: [USF-XSim-98] *** Running xsim
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
 open_wave_config C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg
-WARNING: Simulation object /Encoder_tb/tb_CLK was not found in the design.
-WARNING: Simulation object /Encoder_tb/tb_RST was not found in the design.
-WARNING: Simulation object /Encoder_tb/tb_A was not found in the design.
-WARNING: Simulation object /Encoder_tb/tb_B was not found in the design.
-WARNING: Simulation object /Encoder_tb/tb_PWM_OUT was not found in the design.
-WARNING: Simulation object /Encoder_tb/tb_PWM_DIRECTION was not found in the design.
-WARNING: Simulation object /Encoder_tb/tb_PWM_ERROR was not found in the design.
-WARNING: Simulation object /Encoder_tb/Kp was not found in the design.
-WARNING: Simulation object /Encoder_tb/Ki was not found in the design.
-WARNING: Simulation object /Encoder_tb/Kd was not found in the design.
-WARNING: Simulation object /Encoder_tb/PosiBits was not found in the design.
-WARNING: Simulation object /Encoder_tb/MaxBitsK was not found in the design.
 source TotalSystem_TB.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
@@ -709,7 +164,8 @@ source TotalSystem_TB.tcl
 # run 1000ns
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'TotalSystem_TB_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-run all
+run 8 ms
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1844.941 ; gain = 0.000
 relaunch_sim
 Command: launch_simulation -step compile -simset sim_1 -mode behavioral
 INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
@@ -717,9 +173,15 @@ WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator in
 WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TotalSystem_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
 "xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Encoder'
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
 INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
@@ -735,98 +197,48 @@ Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+ERROR: [VRFC 10-3348] formal generic 'maxposition' has no actual or default value [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:8]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit totalsystem_tb in library work failed.
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Time resolution is 1 ps
-save_wave_config {C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg}
-run 5 us
-save_wave_config {C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg}
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TotalSystem_TB'
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.math_real
-Compiling architecture behavioral of entity xil_defaultlib.PWM [\PWM(max_value=200000,bitnumber=...]
-Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=8)\]
-Compiling architecture behavioral of entity xil_defaultlib.PID [\PID(kbits=20,kdetail=100000,int...]
-Compiling architecture behavioral of entity xil_defaultlib.TopLevel [toplevel_default]
-Compiling architecture behavioral of entity xil_defaultlib.totalsystem_tb
-Built simulation snapshot TotalSystem_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Time resolution is 1 ps
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Time resolution is 1 ps
-save_wave_config {C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg}
-save_wave_config {C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg}
-run 5 us
-save_wave_config {C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg}
-refresh_design
-INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [USF-XSim-99] Step results log file:'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
-Finished Parsing XDC File [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
-Completed Processing XDC Constraints
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3348] formal generic 'maxposition' has no actual or default value [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:8]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit totalsystem_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 
 relaunch_sim
 Command: launch_simulation -step compile -simset sim_1 -mode behavioral
@@ -865,16 +277,201 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package ieee.math_real
 Compiling architecture behavioral of entity xil_defaultlib.PWM [\PWM(max_value=200000,bitnumber=...]
-Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=8)\]
+Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=14,maxposition...]
 Compiling architecture behavioral of entity xil_defaultlib.PID [\PID(kbits=20,kdetail=100000,int...]
-Compiling architecture behavioral of entity xil_defaultlib.TopLevel [toplevel_default]
+Compiling architecture behavioral of entity xil_defaultlib.TopLevel [\TopLevel(pidclkts=100)\]
 Compiling architecture behavioral of entity xil_defaultlib.totalsystem_tb
 Built simulation snapshot TotalSystem_TB_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 Time resolution is 1 ps
-run 5 us
-save_wave_config {C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg}
+run 8 ms
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1860.668 ; gain = 9.512
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/utils_1/imports/synth_1/TopLevel.dcp with file C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/TopLevel.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1
+
+launch_runs impl_1 -jobs 28
+[Tue Jan 14 17:54:17 2025] Launched synth_1...
+Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/synth_1/runme.log
+[Tue Jan 14 17:54:17 2025] Launched impl_1...
+Run output will be captured here: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.runs/impl_1/runme.log
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TotalSystem_TB'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.PWM [\PWM(max_value=200000,bitnumber=...]
+Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=14,maxposition...]
+Compiling architecture behavioral of entity xil_defaultlib.PID [\PID(kbits=20,kdetail=100000,int...]
+Compiling architecture behavioral of entity xil_defaultlib.TopLevel [\TopLevel(pidclkts=100)\]
+Compiling architecture behavioral of entity xil_defaultlib.totalsystem_tb
+Built simulation snapshot TotalSystem_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2415.734 ; gain = 0.000
+run 8 ms
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2415.734 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TotalSystem_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/sim_1/new/TotalSystem_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TotalSystem_TB'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'TotalSystem_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TotalSystem_TB_behav xil_defaultlib.TotalSystem_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.PWM [\PWM(max_value=200000,bitnumber=...]
+Compiling architecture behaviour of entity xil_defaultlib.Encoder [\Encoder(posibits=14,maxposition...]
+Compiling architecture behavioral of entity xil_defaultlib.PID [\PID(kbits=20,kdetail=100000,int...]
+Compiling architecture behavioral of entity xil_defaultlib.TopLevel [\TopLevel(pidclkts=100)\]
+Compiling architecture behavioral of entity xil_defaultlib.totalsystem_tb
+Built simulation snapshot TotalSystem_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+run 8 ms
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2415.922 ; gain = 0.000
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: TopLevel
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2582.020 ; gain = 165.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:31]
+	Parameter max_value bound to: 200000 - type: integer 
+	Parameter bitnumber bound to: 18 - type: integer 
+INFO: [Synth 8-3491] module 'PWM' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:5' bound to instance 'PWMT' of component 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'PWM' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:17]
+	Parameter max_value bound to: 200000 - type: integer 
+	Parameter bitnumber bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PWM' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PWM.vhd:17]
+	Parameter PosiBits bound to: 14 - type: integer 
+	Parameter MaxPosition bound to: 10000 - type: integer 
+INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:5' bound to instance 'EncoderT' of component 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'Encoder' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:17]
+	Parameter PosiBits bound to: 14 - type: integer 
+	Parameter MaxPosition bound to: 10000 - type: integer 
+WARNING: [Synth 8-614] signal 'BBB' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:23]
+WARNING: [Synth 8-614] signal 'AAA' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'Encoder' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder.vhd:17]
+	Parameter KBits bound to: 20 - type: integer 
+	Parameter KDetail bound to: 100000 - type: integer 
+	Parameter IntegralBits bound to: 23 - type: integer 
+	Parameter MaxIntegral bound to: 5000000 - type: integer 
+	Parameter MaxPositionBits bound to: 14 - type: integer 
+	Parameter MaxPower bound to: 200000 - type: integer 
+	Parameter MaxPowerBits bound to: 18 - type: integer 
+	Parameter PIDCLKTS bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'PID' declared at 'C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:6' bound to instance 'PIDT' of component 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'PID' [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:29]
+	Parameter KBits bound to: 20 - type: integer 
+	Parameter KDetail bound to: 100000 - type: integer 
+	Parameter IntegralBits bound to: 23 - type: integer 
+	Parameter MaxIntegral bound to: 5000000 - type: integer 
+	Parameter MaxPositionBits bound to: 14 - type: integer 
+	Parameter MaxPower bound to: 200000 - type: integer 
+	Parameter MaxPowerBits bound to: 18 - type: integer 
+	Parameter PIDCLKTS bound to: 10 - type: integer 
+WARNING: [Synth 8-614] signal 'Error' is read in the process but is not in the sensitivity list [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:40]
+WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:81]
+WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:81]
+WARNING: [Synth 8-7193] Integer conversion function is truncating input [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'PID' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (0#1) [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/TopLevel.vhd:31]
+WARNING: [Synth 8-3848] Net ErrorOut in module/entity PID does not have driver. [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/PID.vhd:25]
+WARNING: [Synth 8-7129] Port ErrorOut in module PID is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2674.023 ; gain = 257.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2674.023 ; gain = 257.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2674.023 ; gain = 257.820
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2674.023 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
+Finished Parsing XDC File [C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2720.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2845.168 ; gain = 428.965
+15 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 2845.168 ; gain = 428.965
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 14:48:02 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 14 19:13:38 2025...

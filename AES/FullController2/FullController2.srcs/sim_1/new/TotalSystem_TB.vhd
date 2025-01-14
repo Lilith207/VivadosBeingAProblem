@@ -13,13 +13,13 @@ architecture Behavioral of TotalSystem_TB is
             DetailK : integer := 5; --amount of numbers behind the comma it should have in detail
             MaxBitsK : integer := 20; --the amount of bits to be used for k
         
-            MaxIntegral : integer := 5000;
+            MaxIntegral : integer := 5000000;
         
             PWM_Period : integer := 200000; --in NS (nano seconds)
             CLK_SPD : integer := 125; --in MHz (mega hertz, to make hertz you multiply with 10^6)
         
-            MaxPosition : integer := 200; --this is determined by size of the max size of setpoint
-            PositionBits : integer := 8;
+            MaxPosition : integer := 10000; --this is determined by size of the max size of setpoint
+            PositionBits : integer := 14;
             PIDCLKTS : integer := 100
         );
         Port 
@@ -32,7 +32,7 @@ architecture Behavioral of TotalSystem_TB is
         );
     end component;
     constant MaxBitsK: integer := 20;
-    constant PositionBits : integer := 8;
+    constant PositionBits : integer := 14;
     
     signal tb_CLK: std_logic := '0';
     signal tb_RST: std_logic := '0';
@@ -42,9 +42,9 @@ architecture Behavioral of TotalSystem_TB is
     signal tb_PWM_DIRECTION: std_logic := '0';
     signal tb_PWM_ERROR: std_logic := '0';
     signal CPU_Position : std_logic_vector(PositionBits downto 0);
-    signal Kp: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(120000, MaxBitsK+1));
-    signal Ki: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(320000, MaxBitsK+1));
-    signal Kd: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(1000, MaxBitsK+1));
+    signal Kp: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(10000, MaxBitsK+1));
+    signal Ki: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(5000, MaxBitsK+1));
+    signal Kd: std_logic_vector(MaxBitsK downto 0) := std_logic_vector(to_signed(10000, MaxBitsK+1));
     signal SetP: std_logic_vector(PositionBits downto 0) := std_logic_vector(to_signed(10, PositionBits+1));
     
 begin
@@ -80,22 +80,22 @@ UUT: TopLevel
     
     Atest : PROCESS
     BEGIN
-    while now < 1 us loop
+    while now < 3 ms loop
         tb_A <= not tb_A;-- after 20ns;
         wait for 40 ns;
     end loop;
     wait for 20 ns;
-    while now < 2 us loop
+    while now < 4 ms loop
         tb_A <= not tb_A;
         wait for 40 ns;
     end loop;
     wait for 20 ns;
-    while now < 3 us loop
+    while now < 6 ms loop
         tb_A <= not tb_A;
         wait for 40 ns;
     end loop;
     wait for 20 ns;
-    while now < 4 us loop
+    while now < 8 ms loop
         tb_A <= not tb_A;
         wait for 40 ns;
     end loop;
@@ -104,19 +104,19 @@ UUT: TopLevel
     
     Btest : PROCESS
     BEGIN
-    while now < 1 us loop
+    while now < 2 ms loop
         tb_B <= not tb_B;
         wait for 40 ns;
     end loop;
-    while now < 2 us loop
+    while now < 4 ms loop
         tb_B <= not tb_B;
         wait for 40 ns;
     end loop;
-    while now < 3 us loop
+    while now < 6 ms loop
         tb_B <= not tb_B;
         wait for 40 ns;
     end loop;
-    while now < 4 us loop
+    while now < 8 ms loop
         tb_B <= not tb_B;
         wait for 40 ns;
     end loop;
