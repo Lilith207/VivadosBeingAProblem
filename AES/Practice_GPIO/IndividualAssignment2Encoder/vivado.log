@@ -75,3 +75,20 @@ WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file n
 WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found 'c:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found 'c:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.vhdl'. Please regenerate to continue.
 open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 1314.031 ; gain = 399.512
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jan  9 13:48:44 2025] Launched design_1_processing_system7_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.runs/design_1_processing_system7_0_0_synth_1/runme.log
+synth_1: C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.runs/synth_1/runme.log
+[Thu Jan  9 13:48:44 2025] Launched impl_1...
+Run output will be captured here: C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/design_1_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/design_1_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/design_1_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Vivado/2022.2/data/embeddedsw) loading 2 seconds
+write_hw_platform: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1483.598 ; gain = 138.477

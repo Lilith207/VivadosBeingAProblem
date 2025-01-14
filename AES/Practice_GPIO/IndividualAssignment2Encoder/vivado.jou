@@ -12,3 +12,9 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/IndividualAssignment2Encoder.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/VivadosBeingAProblem/AES/Practice_GPIO/IndividualAssignment2Encoder/design_1_wrapper.xsa
