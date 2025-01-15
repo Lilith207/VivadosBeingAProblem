@@ -1,0 +1,50 @@
+Nothing to build in platform 'FullControllerGPIOVitis'
+
+11:05:30 **** Incremental Build of configuration Debug for project FullControllerGPIOCode ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOVitis/export/FullControllerGPIOVitis/sw/FullControllerGPIOVitis/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:1:
+C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOVitis/export/FullControllerGPIOVitis/sw/FullControllerGPIOVitis/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOVitis/export/FullControllerGPIOVitis/sw/FullControllerGPIOVitis/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+In file included from ../src/main.c:2:
+C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOVitis/export/FullControllerGPIOVitis/sw/FullControllerGPIOVitis/standalone_domain/bspinclude/include/xparameters.h:222:34: warning: initialization of 'Xuint32 *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  222 | #define XPAR_AXI_GPIO_0_BASEADDR 0x41200000
+      |                                  ^~~~~~~~~~
+../src/main.c:6:27: note: in expansion of macro 'XPAR_AXI_GPIO_0_BASEADDR'
+    6 | Xuint32 *baseaddr_p_op1 = XPAR_AXI_GPIO_0_BASEADDR; // Writing
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOVitis/export/FullControllerGPIOVitis/sw/FullControllerGPIOVitis/standalone_domain/bspinclude/include/xparameters.h:230:34: warning: initialization of 'Xuint32 *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  230 | #define XPAR_AXI_GPIO_1_BASEADDR 0x41210000
+      |                                  ^~~~~~~~~~
+../src/main.c:7:27: note: in expansion of macro 'XPAR_AXI_GPIO_1_BASEADDR'
+    7 | Xuint32 *baseaddr_p_op2 = XPAR_AXI_GPIO_1_BASEADDR; // Writing
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOVitis/export/FullControllerGPIOVitis/sw/FullControllerGPIOVitis/standalone_domain/bspinclude/include/xparameters.h:238:34: warning: initialization of 'Xuint32 *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  238 | #define XPAR_AXI_GPIO_2_BASEADDR 0x41220000
+      |                                  ^~~~~~~~~~
+../src/main.c:8:27: note: in expansion of macro 'XPAR_AXI_GPIO_2_BASEADDR'
+    8 | Xuint32 *baseaddr_p_res = XPAR_AXI_GPIO_2_BASEADDR; // Reading
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: FullControllerGPIOCode.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOVitis/export/FullControllerGPIOVitis/sw/FullControllerGPIOVitis/standalone_domain/bsplib/lib -o "FullControllerGPIOCode.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FullControllerGPIOCode.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FullControllerGPIOCode.elf  |tee "FullControllerGPIOCode.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22313	   1152	  22568	  46033	   b3d1	FullControllerGPIOCode.elf
+'Finished building: FullControllerGPIOCode.elf.size'
+' '
