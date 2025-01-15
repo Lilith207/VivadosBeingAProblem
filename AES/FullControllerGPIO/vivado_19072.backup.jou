@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Jan 14 17:26:13 2025
+# Process ID: 19072
+# Current directory: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25968 C:\VivadoBullshit\VivadosBeingAProblem\AES\FullController2\FullController2.xpr
+# Log file: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/vivado.log
+# Journal file: C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16936 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/FullController2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/VivadoBullshit/VivadosBeingAProblem/AES/FullController2/Encoder_tb_behav.wcfg
+source TotalSystem_TB.tcl
+run 8 ms
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 8 ms
+reset_run synth_1
+launch_runs impl_1 -jobs 28
+wait_on_run impl_1
+relaunch_sim
+run 8 ms
+relaunch_sim
+run 8 ms
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim

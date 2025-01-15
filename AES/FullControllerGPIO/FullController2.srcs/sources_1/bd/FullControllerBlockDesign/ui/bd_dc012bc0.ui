@@ -1,0 +1,51 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.658773",
+   "Default View_TopLeft":"-167,-472",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1520 -y -410 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1520 -y -390 -defaultsOSRD
+preplace port port-id_RST -pg 1 -lvl 0 -x -90 -y -230 -defaultsOSRD
+preplace port port-id_A -pg 1 -lvl 0 -x -90 -y -210 -defaultsOSRD
+preplace port port-id_B -pg 1 -lvl 0 -x -90 -y -190 -defaultsOSRD
+preplace port port-id_PWM_OUT -pg 1 -lvl 5 -x 1520 -y -190 -defaultsOSRD
+preplace port port-id_PWM_DIRECTION -pg 1 -lvl 5 -x 1520 -y -170 -defaultsOSRD
+preplace port port-id_PWM_ERROR -pg 1 -lvl 5 -x 1520 -y -150 -defaultsOSRD
+preplace inst TopLevel_0 -pg 1 -lvl 3 -x 1010 -y -180 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 2 -x 590 -y -200 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 2 -x 590 -y 180 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 4 -x 1350 -y -320 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 150 -y -370 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 1010 -y 90 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 2 -x 590 -y 10 -defaultsOSRD
+preplace netloc TopLevel_0_CPU_Position 1 3 2 N -210 1490
+preplace netloc axi_gpio_0_gpio2_io_o 1 2 1 760 -170n
+preplace netloc axi_gpio_0_gpio_io_o 1 2 1 780 -210n
+preplace netloc axi_gpio_1_gpio2_io_o 1 2 1 840 -110n
+preplace netloc axi_gpio_1_gpio_io_o 1 2 1 780 -130n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 -60 -270 370 -330 830 -330 1180
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 360 -330n
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 3 390 -290 770 -310 1180
+preplace netloc RST_1 1 0 3 N -230 350J -90 800J
+preplace netloc A_1 1 0 3 -60J -110 NJ -110 790
+preplace netloc B_1 1 0 3 -70J -100 NJ -100 810
+preplace netloc TopLevel_0_PWM_OUT 1 3 2 N -190 NJ
+preplace netloc TopLevel_0_PWM_DIRECTION 1 3 2 N -170 NJ
+preplace netloc TopLevel_0_PWM_ERROR 1 3 2 N -150 NJ
+preplace netloc processing_system7_0_DDR 1 1 4 NJ -410 NJ -410 NJ -410 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ -390 NJ -390 1190J -400 1490J
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 NJ -370 820
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 3 380 -320 NJ -320 1170
+preplace netloc ps7_0_axi_periph_M01_AXI 1 1 3 400 270 NJ 270 1170
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 1190 -340n
+levelinfo -pg 1 -90 150 590 1010 1350 1520
+pagesize -pg 1 -db -bbox -sgen -170 -470 1700 370
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_clkrst_cnt":"2",
+   "da_ps7_cnt":"1"
+}

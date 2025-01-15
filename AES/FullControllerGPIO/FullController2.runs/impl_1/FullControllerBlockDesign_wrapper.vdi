@@ -1,0 +1,1325 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jan 15 10:13:48 2025
+# Process ID: 8240
+# Current directory: C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.runs/impl_1
+# Command line: vivado.exe -log FullControllerBlockDesign_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FullControllerBlockDesign_wrapper.tcl -notrace
+# Log file: C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.runs/impl_1/FullControllerBlockDesign_wrapper.vdi
+# Journal file: C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.runs/impl_1\vivado.jou
+# Running On: ArwenLT, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16857 MB
+#-----------------------------------------------------------
+source FullControllerBlockDesign_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 506.289 ; gain = 84.039
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2022.2/data/ip'.
+Command: link_design -top FullControllerBlockDesign_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_TopLevel_0_0/FullControllerBlockDesign_TopLevel_0_0.dcp' for cell 'FullControllerBlockDesign_i/TopLevel_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_0/FullControllerBlockDesign_axi_gpio_0_0.dcp' for cell 'FullControllerBlockDesign_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_1/FullControllerBlockDesign_axi_gpio_0_1.dcp' for cell 'FullControllerBlockDesign_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_2/FullControllerBlockDesign_axi_gpio_0_2.dcp' for cell 'FullControllerBlockDesign_i/axi_gpio_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_processing_system7_0_0/FullControllerBlockDesign_processing_system7_0_0.dcp' for cell 'FullControllerBlockDesign_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_rst_ps7_0_50M_0/FullControllerBlockDesign_rst_ps7_0_50M_0.dcp' for cell 'FullControllerBlockDesign_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_xbar_0/FullControllerBlockDesign_xbar_0.dcp' for cell 'FullControllerBlockDesign_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_auto_pc_0/FullControllerBlockDesign_auto_pc_0.dcp' for cell 'FullControllerBlockDesign_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 953.031 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 179 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_0/FullControllerBlockDesign_axi_gpio_0_0_board.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_0/FullControllerBlockDesign_axi_gpio_0_0_board.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_0/U0'
+Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_0/FullControllerBlockDesign_axi_gpio_0_0.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_0/FullControllerBlockDesign_axi_gpio_0_0.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_0/U0'
+Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_1/FullControllerBlockDesign_axi_gpio_0_1_board.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_1/FullControllerBlockDesign_axi_gpio_0_1_board.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_1/U0'
+Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_1/FullControllerBlockDesign_axi_gpio_0_1.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_1/FullControllerBlockDesign_axi_gpio_0_1.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_1/U0'
+Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_2/FullControllerBlockDesign_axi_gpio_0_2_board.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_2/U0'
+Finished Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_2/FullControllerBlockDesign_axi_gpio_0_2_board.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_2/U0'
+Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_2/FullControllerBlockDesign_axi_gpio_0_2.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_2/U0'
+Finished Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_axi_gpio_0_2/FullControllerBlockDesign_axi_gpio_0_2.xdc] for cell 'FullControllerBlockDesign_i/axi_gpio_2/U0'
+Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_processing_system7_0_0/FullControllerBlockDesign_processing_system7_0_0.xdc] for cell 'FullControllerBlockDesign_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_processing_system7_0_0/FullControllerBlockDesign_processing_system7_0_0.xdc] for cell 'FullControllerBlockDesign_i/processing_system7_0/inst'
+Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_rst_ps7_0_50M_0/FullControllerBlockDesign_rst_ps7_0_50M_0_board.xdc] for cell 'FullControllerBlockDesign_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_rst_ps7_0_50M_0/FullControllerBlockDesign_rst_ps7_0_50M_0_board.xdc] for cell 'FullControllerBlockDesign_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_rst_ps7_0_50M_0/FullControllerBlockDesign_rst_ps7_0_50M_0.xdc] for cell 'FullControllerBlockDesign_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.gen/sources_1/bd/FullControllerBlockDesign/ip/FullControllerBlockDesign_rst_ps7_0_50M_0/FullControllerBlockDesign_rst_ps7_0_50M_0.xdc] for cell 'FullControllerBlockDesign_i/rst_ps7_0_50M/U0'
+Parsing XDC File [C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
+Finished Parsing XDC File [C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.srcs/constrs_1/new/Zybo_Z7Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1111.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1111.520 ; gain = 554.172
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.996 . Memory (MB): peak = 1136.535 ; gain = 25.016
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: b73b704f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1621.098 ; gain = 484.562
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 12296c3e7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.219 . Memory (MB): peak = 1966.629 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 6 cells and removed 42 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 104e350d1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.245 . Memory (MB): peak = 1966.629 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 17154eac3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.388 . Memory (MB): peak = 1966.629 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 103 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 17154eac3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.447 . Memory (MB): peak = 1966.629 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 17154eac3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.456 . Memory (MB): peak = 1966.629 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 10f85c2e5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.473 . Memory (MB): peak = 1966.629 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               6  |              42  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |             103  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1966.629 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 11593e7b6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.612 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 11593e7b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 11593e7b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1966.629 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 11593e7b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1966.629 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1966.629 ; gain = 855.109
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1966.629 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.runs/impl_1/FullControllerBlockDesign_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file FullControllerBlockDesign_wrapper_drc_opted.rpt -pb FullControllerBlockDesign_wrapper_drc_opted.pb -rpx FullControllerBlockDesign_wrapper_drc_opted.rpx
+Command: report_drc -file FullControllerBlockDesign_wrapper_drc_opted.rpt -pb FullControllerBlockDesign_wrapper_drc_opted.pb -rpx FullControllerBlockDesign_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.runs/impl_1/FullControllerBlockDesign_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1966.629 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b4cf9136
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1966.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: fab955a4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.703 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1c1ab4f8f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1c1ab4f8f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1966.629 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1c1ab4f8f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1c20c38de
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1512ab99f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1512ab99f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 230ca9d87
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 32 LUTNM shape to break, 49 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 32, total 32, new lutff created 1
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 53 nets or LUTs. Breaked 32 LUTs, combined 21 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           32  |             21  |                    53  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           32  |             21  |                    53  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 18e5b7d0e
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1966.629 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 1bbd8c315
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1966.629 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1bbd8c315
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1dc38a310
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 16b097486
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1eedf4d2d
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 165f5e33c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 12c5e2620
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 17f66dc0d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 168c2ab6d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1fb7109aa
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1035bfb5c
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1966.629 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1035bfb5c
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1966.629 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 14fea0c11
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-15.576 | TNS=-262.156 |
+Phase 1 Physical Synthesis Initialization | Checksum: 169be2afc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1974.926 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1886d4df8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1974.926 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 14fea0c11
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1974.926 ; gain = 8.297
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-13.295. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 197e67a39
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1974.926 ; gain = 8.297
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1974.926 ; gain = 8.297
+Phase 4.1 Post Commit Optimization | Checksum: 197e67a39
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1974.926 ; gain = 8.297
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 197e67a39
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1974.926 ; gain = 8.297
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                4x4|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 197e67a39
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1974.926 ; gain = 8.297
+Phase 4.3 Placer Reporting | Checksum: 197e67a39
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1974.926 ; gain = 8.297
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1974.926 ; gain = 0.000
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1974.926 ; gain = 8.297
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1b50ad5ea
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1974.926 ; gain = 8.297
+Ending Placer Task | Checksum: 13c1f7e9f
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1974.926 ; gain = 8.297
+INFO: [Common 17-83] Releasing license: Implementation
+75 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1974.926 ; gain = 8.297
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.377 . Memory (MB): peak = 1974.926 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.runs/impl_1/FullControllerBlockDesign_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file FullControllerBlockDesign_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1974.926 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file FullControllerBlockDesign_wrapper_utilization_placed.rpt -pb FullControllerBlockDesign_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file FullControllerBlockDesign_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1974.926 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.329 . Memory (MB): peak = 1975.145 ; gain = 0.219
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.34s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1975.145 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-13.305 | TNS=-223.548 |
+Phase 1 Physical Synthesis Initialization | Checksum: d9a7bb98
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.232 . Memory (MB): peak = 1975.148 ; gain = 0.004
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-13.305 | TNS=-223.548 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: d9a7bb98
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.256 . Memory (MB): peak = 1975.148 ; gain = 0.004
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-13.305 | TNS=-223.548 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg_n_0_[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 32 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__2_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-13.079 | TNS=-219.706 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__2_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER3[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__1_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__1_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg[16]_i_2_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/i__carry__0_i_9__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg[6]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg[4]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER[4]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__408_carry__5_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__408_carry__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__408_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.979 | TNS=-218.006 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_i_8_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_i_8_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.971 | TNS=-217.871 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_8_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_8_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.917 | TNS=-216.953 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_3_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_3_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.891 | TNS=-216.510 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_9_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_9
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.881 | TNS=-216.340 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_4_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_4_comp_2.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.872 | TNS=-216.187 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_6_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_6_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.869 | TNS=-216.136 |
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_1_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_1_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.851 | TNS=-215.831 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_12_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_12
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.815 | TNS=-215.218 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_8_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_8_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.752 | TNS=-214.147 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_4_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_4_comp_2.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__3_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.728 | TNS=-213.739 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__3_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__3_i_1_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__3_i_1_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__3_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.726 | TNS=-213.705 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_4_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_4_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.719 | TNS=-213.587 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_4_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_4
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.685 | TNS=-213.008 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_3_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_3_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.659 | TNS=-212.566 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_9_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_9
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.651 | TNS=-212.431 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_10_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 11 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.651 | TNS=-212.431 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_1_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_1
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.640 | TNS=-212.244 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__7_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.629 | TNS=-212.057 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_3_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_3_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.604 | TNS=-211.632 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_5_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_5_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.599 | TNS=-211.547 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_8_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_8_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.598 | TNS=-211.530 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_9_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_9
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.581 | TNS=-211.241 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-601] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_1_n_0. Net driver FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_1 was replaced.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.567 | TNS=-211.002 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.566 | TNS=-210.985 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.565 | TNS=-210.969 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_1_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_1_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.563 | TNS=-210.934 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.559 | TNS=-210.866 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.556 | TNS=-210.815 |
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_1_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_1
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.552 | TNS=-210.747 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_4_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_4_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.547 | TNS=-210.663 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_10_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-81] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_10_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.547 | TNS=-210.663 |
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_i_4_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_i_4_comp_1.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.543 | TNS=-210.595 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.542 | TNS=-210.578 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.539 | TNS=-210.527 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_3_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_3_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.539 | TNS=-210.527 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_4_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_4_comp_2.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.537 | TNS=-210.493 |
+INFO: [Physopt 32-134] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_10_n_0_repN. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_10_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__5_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.536 | TNS=-210.476 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_8_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_8_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__2_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.535 | TNS=-210.459 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_1_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_1_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.513 | TNS=-210.085 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_14_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_14_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.509 | TNS=-210.016 |
+INFO: [Physopt 32-81] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_14_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_14_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.508 | TNS=-209.999 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 19 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_14_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.491 | TNS=-209.711 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 25 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.487 | TNS=-209.642 |
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_4_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_4
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.486 | TNS=-209.626 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_4_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_1_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_1
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.483 | TNS=-209.575 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_4_n_0_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__6_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 25 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__5_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.478 | TNS=-209.489 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 19 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.455 | TNS=-209.098 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.453 | TNS=-209.064 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.450 | TNS=-209.014 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 19 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.432 | TNS=-208.707 |
+INFO: [Physopt 32-81] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_13_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.430 | TNS=-208.673 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.429 | TNS=-208.657 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_14_n_0. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_14_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.428 | TNS=-208.640 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.426 | TNS=-208.605 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.425 | TNS=-208.588 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 25 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__5_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.424 | TNS=-208.571 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.419 | TNS=-208.486 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.411 | TNS=-208.350 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_10_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_10
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__1_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.410 | TNS=-208.334 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.405 | TNS=-208.249 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_3_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_3_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__0_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.401 | TNS=-208.181 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_15_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_15_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.398 | TNS=-208.129 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8__0[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER[2]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/C[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_inferred__0/i__carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_inferred__0/i__carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_inferred__0/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/i__carry_i_3__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.388 | TNS=-207.959 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/i__carry_i_4__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.310 | TNS=-206.633 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/i__carry_i_2__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.305 | TNS=-206.548 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/i__carry_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8_n_105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_n_87. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/Integral_reg[23].  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/Integral_reg[23]
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/Integral_reg[23]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.263 | TNS=-205.834 |
+INFO: [Physopt 32-81] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/Integral_reg[23]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/Integral_reg[23]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.233 | TNS=-205.325 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/Integral_reg[23]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg_n_0_[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__2_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER3[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__1_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg[16]_i_2_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER[4]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__408_carry__5_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__408_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__3_i_1_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__3_i_1_comp
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__3_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.232 | TNS=-205.308 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_10_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__5_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8__0[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER[2]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/C[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/i__carry_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8_n_105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_n_87. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/Integral_reg[23]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.232 | TNS=-205.308 |
+Phase 3 Critical Path Optimization | Checksum: 992381c2
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 1984.234 ; gain = 9.090
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.232 | TNS=-205.308 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg_n_0_[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__2_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER3[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__1_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__1_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg[16]_i_2_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/i__carry__0_i_9__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg[6]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg[4]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER[4]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__408_carry__5_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__408_carry__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__408_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-601] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_n_0. Net driver FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_comp was replaced.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.207 | TNS=-204.882 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_11_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_11
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.192 | TNS=-204.628 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_1_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_1_comp
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.187 | TNS=-204.542 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_4_n_0_repN_1.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_4_comp_1
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_4_n_0_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.146 | TNS=-203.846 |
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_comp
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.144 | TNS=-203.812 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 13 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.142 | TNS=-203.778 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_2_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_2_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__1_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.122 | TNS=-203.438 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_4_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_7_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_7_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.108 | TNS=-203.200 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_10_n_0_repN. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_10_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__5_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_2_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_2_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.106 | TNS=-203.165 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_9_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_9
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.104 | TNS=-203.131 |
+INFO: [Physopt 32-710] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_6_n_0. Critical path length was reduced through logic transformation on cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_6_comp.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.102 | TNS=-203.098 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8__0[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__2_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__1_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER[2]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/C[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_inferred__0/i__carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_inferred__0/i__carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_inferred__0/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/i__carry_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8_n_105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_n_87. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/Integral_reg[23]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg_n_0_[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__2_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER3[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER1_carry__1_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER_reg[16]_i_2_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER[4]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__408_carry__5_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__408_carry__4_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__345_carry__2_i_4_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__5_i_10_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__5_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.100 | TNS=-203.064 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__292_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__7_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__6_i_4_n_0_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__6_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 25 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__5_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.094 | TNS=-202.962 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.092 | TNS=-202.928 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__3_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.090 | TNS=-202.894 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__5_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_13_n_0.  Re-placed instance FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_13
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.087 | TNS=-202.843 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__198_carry__4_i_4_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__4_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.085 | TNS=-202.809 |
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry__3_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8__0[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER6__0_carry_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER[2]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/C[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/i__carry_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8_n_105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10_n_87. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/Integral_reg[23]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.085 | TNS=-202.809 |
+Phase 4 Critical Path Optimization | Checksum: 6f516315
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 1984.246 ; gain = 9.102
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1984.246 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-12.085 | TNS=-202.809 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          1.220  |         20.740  |            8  |              0  |                    87  |           0  |           2  |  00:00:21  |
+|  Total          |          1.220  |         20.740  |            8  |              0  |                    87  |           0  |           3  |  00:00:21  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1984.246 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 19c0faef0
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 1984.246 ; gain = 9.102
+INFO: [Common 17-83] Releasing license: Implementation
+579 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 1984.246 ; gain = 9.320
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.472 . Memory (MB): peak = 1993.023 ; gain = 8.777
+INFO: [Common 17-1381] The checkpoint 'C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.runs/impl_1/FullControllerBlockDesign_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 63075069 ConstDB: 0 ShapeSum: 748428ca RouteDB: 0
+Post Restoration Checksum: NetGraph: b6dbe52 NumContArr: d6dd7b9f Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: e24b39f1
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2030.832 ; gain = 28.695
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: e24b39f1
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2036.844 ; gain = 34.707
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: e24b39f1
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2036.844 ; gain = 34.707
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 16c2afb85
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2044.793 ; gain = 42.656
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-11.772| TNS=-197.487| WHS=-0.185 | THS=-30.057|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.015625 %
+  Global Horizontal Routing Utilization  = 0.0227482 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 3358
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 3309
+  Number of Partially Routed Nets     = 49
+  Number of Node Overlaps             = 19
+
+Phase 2 Router Initialization | Checksum: 12562cc84
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 12562cc84
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2069.844 ; gain = 67.707
+Phase 3 Initial Routing | Checksum: 121511f87
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1260
+ Number of Nodes with overlaps = 658
+ Number of Nodes with overlaps = 363
+ Number of Nodes with overlaps = 234
+ Number of Nodes with overlaps = 134
+ Number of Nodes with overlaps = 54
+ Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-15.021| TNS=-252.708| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1465e6d17
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 563
+ Number of Nodes with overlaps = 271
+ Number of Nodes with overlaps = 175
+ Number of Nodes with overlaps = 111
+ Number of Nodes with overlaps = 101
+ Number of Nodes with overlaps = 55
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-14.803| TNS=-247.996| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 107280a6b
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:36 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 566
+ Number of Nodes with overlaps = 300
+ Number of Nodes with overlaps = 187
+ Number of Nodes with overlaps = 122
+ Number of Nodes with overlaps = 73
+ Number of Nodes with overlaps = 35
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-15.108| TNS=-253.180| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: d9b63e12
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:45 . Memory (MB): peak = 2069.844 ; gain = 67.707
+Phase 4 Rip-up And Reroute | Checksum: d9b63e12
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:45 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1729382f7
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-14.654| TNS=-245.462| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 14df74a09
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 14df74a09
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+Phase 5 Delay and Skew Optimization | Checksum: 14df74a09
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1dd3edd9c
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-14.586| TNS=-244.306| WHS=0.042  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1cb8e41b2
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+Phase 6 Post Hold Fix | Checksum: 1cb8e41b2
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.75113 %
+  Global Horizontal Routing Utilization  = 2.51218 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 54.955%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 57.6577%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 73.5294%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 58.8235%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 20de8d35b
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 20de8d35b
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 23748d564
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-14.586| TNS=-244.306| WHS=0.042  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 23748d564
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:46 . Memory (MB): peak = 2069.844 ; gain = 67.707
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+598 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:08 ; elapsed = 00:00:47 . Memory (MB): peak = 2069.844 ; gain = 76.820
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.466 . Memory (MB): peak = 2085.055 ; gain = 8.945
+INFO: [Common 17-1381] The checkpoint 'C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.runs/impl_1/FullControllerBlockDesign_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file FullControllerBlockDesign_wrapper_drc_routed.rpt -pb FullControllerBlockDesign_wrapper_drc_routed.pb -rpx FullControllerBlockDesign_wrapper_drc_routed.rpx
+Command: report_drc -file FullControllerBlockDesign_wrapper_drc_routed.rpt -pb FullControllerBlockDesign_wrapper_drc_routed.pb -rpx FullControllerBlockDesign_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.runs/impl_1/FullControllerBlockDesign_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file FullControllerBlockDesign_wrapper_methodology_drc_routed.rpt -pb FullControllerBlockDesign_wrapper_methodology_drc_routed.pb -rpx FullControllerBlockDesign_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file FullControllerBlockDesign_wrapper_methodology_drc_routed.rpt -pb FullControllerBlockDesign_wrapper_methodology_drc_routed.pb -rpx FullControllerBlockDesign_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullController2.runs/impl_1/FullControllerBlockDesign_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file FullControllerBlockDesign_wrapper_power_routed.rpt -pb FullControllerBlockDesign_wrapper_power_summary_routed.pb -rpx FullControllerBlockDesign_wrapper_power_routed.rpx
+Command: report_power -file FullControllerBlockDesign_wrapper_power_routed.rpt -pb FullControllerBlockDesign_wrapper_power_summary_routed.pb -rpx FullControllerBlockDesign_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+610 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file FullControllerBlockDesign_wrapper_route_status.rpt -pb FullControllerBlockDesign_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file FullControllerBlockDesign_wrapper_timing_summary_routed.rpt -pb FullControllerBlockDesign_wrapper_timing_summary_routed.pb -rpx FullControllerBlockDesign_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file FullControllerBlockDesign_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file FullControllerBlockDesign_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file FullControllerBlockDesign_wrapper_bus_skew_routed.rpt -pb FullControllerBlockDesign_wrapper_bus_skew_routed.pb -rpx FullControllerBlockDesign_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force FullControllerBlockDesign_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10 input FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10 input FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10__0 input FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8 input FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8 input FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8 input FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER9 input FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER9/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER9 input FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER9/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10 output FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10__0 output FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8 output FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER8/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10 multiplier stage FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10__0 multiplier stage FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/POWER10__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/EncoderT/Prevstate_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/EncoderT/Prevstate_reg[0]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/EncoderT/Prevstate_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/EncoderT/Prevstate_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/EncoderT/Prevstate_reg[1]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/EncoderT/Prevstate_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[0]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[10]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[10]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[11]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[11]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[12]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[12]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[13]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[13]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[14]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[14]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[1]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[2]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[3]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[4]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[5]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[5]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[6]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[6]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[7]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[7]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[8]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[8]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[9]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[9]_LDC_i_1/O, cell FullControllerBlockDesign_i/TopLevel_0/U0/PIDT/PError_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 30 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./FullControllerBlockDesign_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2530.320 ; gain = 424.098
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 15 10:16:21 2025...
