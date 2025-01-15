@@ -106,3 +106,67 @@ con
 ----------------End of Script----------------
 
 11:06:29 INFO  : Launch script is exported to file 'C:\VivadosBeingAProblem\AES\FullControllerGPIO\FullControllerGPIOCode_system\_ide\scripts\debugger_fullcontrollergpiocode-default.tcl'
+12:37:04 INFO  : Hardware specification for platform project 'FullControllerGPIOVitis' is updated.
+12:38:04 INFO  : Result from executing command 'getProjects': FullControllerGPIOVitis
+12:38:04 INFO  : Result from executing command 'getPlatforms': FullControllerGPIOVitis|C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOVitis/export/FullControllerGPIOVitis/FullControllerGPIOVitis.xpfm
+12:45:22 INFO  : Disconnected from the channel tcfchan#3.
+12:45:23 INFO  : The hardware specification used by project 'FullControllerGPIOCode' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+12:45:23 INFO  : The file 'C:\VivadosBeingAProblem\AES\FullControllerGPIO\FullControllerGPIOCode\_ide\bitstream\FullControllerBlockDesign_wrapper.bit' stored in project is removed.
+12:45:23 INFO  : The updated bitstream files are copied from platform to folder 'C:\VivadosBeingAProblem\AES\FullControllerGPIO\FullControllerGPIOCode\_ide\bitstream' in project 'FullControllerGPIOCode'.
+12:45:23 INFO  : The file 'C:\VivadosBeingAProblem\AES\FullControllerGPIO\FullControllerGPIOCode\_ide\psinit\ps7_init.tcl' stored in project is removed.
+12:45:28 INFO  : The updated ps init files are copied from platform to folder 'C:\VivadosBeingAProblem\AES\FullControllerGPIO\FullControllerGPIOCode\_ide\psinit' in project 'FullControllerGPIOCode'.
+12:45:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:45:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C5EA' is selected.
+12:45:28 INFO  : 'jtag frequency' command is executed.
+12:45:28 INFO  : Context for 'APU' is selected.
+12:45:28 INFO  : System reset is completed.
+12:45:31 INFO  : 'after 3000' command is executed.
+12:45:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C5EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C5EA-13722093-0"}' command is executed.
+12:45:31 ERROR : couldn't open "C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOCode/_ide/bitstream/FullControllerBlockDesign_wrapper.bit": no such file or directory
+12:45:31 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOCode/_ide/bitstream/FullControllerBlockDesign_wrapper.bit": no such file or directory
+12:45:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+12:45:31 ERROR : couldn't open "C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOCode/_ide/bitstream/FullControllerBlockDesign_wrapper.bit": no such file or directory
+12:46:13 INFO  : Hardware specification for platform project 'FullControllerGPIOVitis' is updated.
+12:46:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:22 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C5EA' is selected.
+12:46:22 INFO  : 'jtag frequency' command is executed.
+12:46:22 INFO  : Context for 'APU' is selected.
+12:46:22 INFO  : System reset is completed.
+12:46:25 INFO  : 'after 3000' command is executed.
+12:46:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C5EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C5EA-13722093-0"}' command is executed.
+12:46:25 ERROR : couldn't open "C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOCode/_ide/bitstream/FullControllerBlockDesign_wrapper.bit": no such file or directory
+12:46:25 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOCode/_ide/bitstream/FullControllerBlockDesign_wrapper.bit": no such file or directory
+12:46:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+12:46:25 ERROR : couldn't open "C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOCode/_ide/bitstream/FullControllerBlockDesign_wrapper.bit": no such file or directory
+12:47:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:47:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C5EA' is selected.
+12:47:36 INFO  : 'jtag frequency' command is executed.
+12:47:36 INFO  : Context for 'APU' is selected.
+12:47:36 INFO  : System reset is completed.
+12:47:39 INFO  : 'after 3000' command is executed.
+12:47:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C5EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C5EA-13722093-0"}' command is executed.
+12:47:39 ERROR : couldn't open "C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOCode/_ide/bitstream/FullControllerBlockDesign_wrapper.bit": no such file or directory
+12:47:39 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOCode/_ide/bitstream/FullControllerBlockDesign_wrapper.bit": no such file or directory
+12:47:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+12:47:39 ERROR : couldn't open "C:/VivadosBeingAProblem/AES/FullControllerGPIO/FullControllerGPIOCode/_ide/bitstream/FullControllerBlockDesign_wrapper.bit": no such file or directory

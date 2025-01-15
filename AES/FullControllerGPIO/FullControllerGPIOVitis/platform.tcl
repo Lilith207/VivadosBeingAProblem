@@ -16,3 +16,6 @@ platform write
 platform generate -domains 
 platform active {FullControllerGPIOVitis}
 platform generate
+platform config -updatehw {C:/VivadosBeingAProblem/AES/FullController_GPIO/FullController_GPIO/FullController_GPIOBlock_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/VivadosBeingAProblem/AES/FullController_GPIO/FullController_GPIO/FullController_GPIOBlock_wrapper.xsa}

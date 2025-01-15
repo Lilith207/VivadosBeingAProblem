@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1736940460">
+  <File Type="PA-TCL" Name="FullController_GPIOBlock_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="FullController_GPIOBlock_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="FullController_GPIOBlock_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="FullController_GPIOBlock_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="FullController_GPIOBlock_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="FullController_GPIOBlock_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="FullController_GPIOBlock_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="FullController_GPIOBlock_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="FullController_GPIOBlock_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../FullControllerGPIO/Encoder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../FullControllerGPIO/PID.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../FullControllerGPIO/PWM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../FullControllerGPIO/TopLevel.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FullController_GPIOBlock/FullController_GPIOBlock.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/FullController_GPIOBlock/hdl/FullController_GPIOBlock_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../FullControllerGPIO/Encoder_tb_behav.wcfg">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FullController_GPIOBlock_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/ContraintsFullController.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="FullController_GPIOBlock_TopLevel_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FullController_GPIOBlock_axi_gpio_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="FullController_GPIOBlock_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FullController_GPIOBlock_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FullController_GPIOBlock_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FullController_GPIOBlock_axi_gpio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="FullController_GPIOBlock_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FullController_GPIOBlock_auto_pc_0"/>
+</GenRun>

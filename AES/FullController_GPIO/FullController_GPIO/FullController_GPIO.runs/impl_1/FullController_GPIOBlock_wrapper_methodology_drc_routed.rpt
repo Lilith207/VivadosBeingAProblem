@@ -1,0 +1,492 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Jan 15 12:34:49 2025
+| Host         : ArwenLT running 64-bit major release  (build 9200)
+| Command      : report_methodology -file FullController_GPIOBlock_wrapper_methodology_drc_routed.rpt -pb FullController_GPIOBlock_wrapper_methodology_drc_routed.pb -rpx FullController_GPIOBlock_wrapper_methodology_drc_routed.rpx
+| Design       : FullController_GPIOBlock_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 90
++-----------+----------+--------------------------------+------------+
+| Rule      | Severity | Description                    | Violations |
++-----------+----------+--------------------------------+------------+
+| DPIR-1    | Warning  | Asynchronous driver check      | 30         |
+| LUTAR-1   | Warning  | LUT drives async reset alert   | 19         |
+| TIMING-16 | Warning  | Large setup violation          | 17         |
+| TIMING-18 | Warning  | Missing input or output delay  | 6          |
+| TIMING-20 | Warning  | Non-clocked latch              | 17         |
+| LATCH-1   | Advisory | Existing latches in the design | 1          |
++-----------+----------+--------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10 input pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER10/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[0]_C/CLR
+FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[1]_C/CLR
+FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[10]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[11]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[12]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[12]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[13]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[13]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[14]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[14]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[4]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[5]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[6]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[7]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[8]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#19 Warning
+LUT drives async reset alert  
+LUT cell FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[9]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -14.170 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[4]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -14.203 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[12]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -14.247 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[11]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -14.269 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[5]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -14.273 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[0]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -14.344 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[8]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -14.379 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[9]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -14.388 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[7]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -14.395 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[6]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -14.399 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[1]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -14.401 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[16]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -14.411 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[15]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -14.428 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[10]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -14.465 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[14]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -14.484 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[13]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -14.529 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[2]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -14.587 ns between FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/Integral_reg[23]_replica/C (clocked by clk_fpga_0) and FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/POWER_reg[3]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on A relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on B relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on RST relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on PWM_DIRECTION relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on PWM_ERROR relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on PWM_OUT relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[0]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[1]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/EncoderT/Prevstate_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[0]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[10]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[10]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[11]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[11]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[12]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[12]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[13]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[13]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[14]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[14]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[1]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[2]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[3]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[4]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[4]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[5]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[5]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[6]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[6]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[7]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[7]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[8]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[8]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[9]_LDC cannot be properly analyzed as its control pin FullController_GPIOBlock_i/TopLevel_0/U0/PIDT/PError_reg[9]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 17 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+
